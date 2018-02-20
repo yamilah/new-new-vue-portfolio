@@ -19,7 +19,7 @@ git reset
 cd $DIR
 
 # Output a new build into the dist directory.
-node node_modules/.bin/parcel build index.html -d dist --public-url ./ --out-file index.html
+NODE_ENV=production node node_modules/.bin/parcel build index.html -d dist --public-url ./ --out-file index.html
 
 cd $DIR/dist
 
