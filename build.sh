@@ -9,6 +9,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR/dist
 
 # Remove everything from the submodule's index in the dist directory.
+RELEASE_BRANCH="gh-pages"
+git checkout $RELEASE_BRANCH
+
 git rm -rf .
 git clean -xdf
 git reset
@@ -28,7 +31,6 @@ echo
 echo "${BOLD}Created new release commit:${NORMAL} $COMMIT_TEXT"
 echo
 
-RELEASE_BRANCH=$( git rev-parse --abbrev-ref HEAD )
 # https://stackoverflow.com/a/3232082/5221054
 read -r -p "${BOLD}Push the release now? [y/N]${NORMAL} " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
