@@ -1,0 +1,4 @@
+[submodule "dist"]
+	path = dist
+	url = git@github.com:yamilah/new-new-vue-portfolio.git
+	branch = gh-pages
