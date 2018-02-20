@@ -37,7 +37,8 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
     echo
     git push origin $RELEASE_BRANCH
-    echo "${BOLD}Release pushed!${NORMAL}"
+    echo "${BOLD}Release pushed!"
+    echo "    The site will show up here in a few minutes:${NORMAL} https://yamilah.github.io/new-new-vue-portfolio/"
 
     cd $DIR
     git add dist
