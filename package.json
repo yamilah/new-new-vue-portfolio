@@ -2,9 +2,11 @@
   "name": "new-new-vue-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/parcel index.html -d dev --out-file index.html",
+    "build": "./build.sh"
   },
   "repository": {
     "type": "git",
