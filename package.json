@@ -1,0 +1,26 @@
+{
+  "name": "new-new-vue-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamilah/new-new-vue-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamilah/new-new-vue-portfolio/issues"
+  },
+  "homepage": "https://github.com/yamilah/new-new-vue-portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.6.2",
+    "parcel-plugin-vue": "^1.5.0",
+    "vue": "^2.5.13",
+    "vue-template-compiler": "^2.5.13"
+  }
+}
