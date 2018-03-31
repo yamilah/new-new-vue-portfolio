@@ -1,5 +1,9 @@
 <template>
-<h1>Testing</h1>
+  <div class="intro">
+    <div class="container">
+      whatever
+    </div>
+  </div>
 </template>
 
 <script>
@@ -9,7 +13,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1 {
-    color: brown;
+.intro {
+  height: 100vh;
+  background-color: #FF1100;
 }
 </style>
