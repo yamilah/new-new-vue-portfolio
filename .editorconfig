@@ -12,7 +12,12 @@ insert_final_newline = true
 indent_style = space
 indent_size = 2
 
-[*.{js,vue,sh}]
+[*.{js,vue}]
+charset = utf-8
+indent_style = space
+indent_size = 2
+
+[*.sh]
 charset = utf-8
 indent_style = space
 indent_size = 4

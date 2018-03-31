@@ -26,6 +26,8 @@
     "normalize.css": "^8.0.0",
     "parcel-bundler": "^1.6.2",
     "parcel-plugin-vue": "^1.5.0",
+    "pug": "^2.0.3",
+    "simple-line-icons": "^2.4.1",
     "vue": "^2.5.13",
     "vue-hot-reload-api": "^2.2.4",
     "vue-router": "^3.0.1",
