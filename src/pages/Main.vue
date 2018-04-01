@@ -2,22 +2,19 @@
   div.main
     Contact
 
-    div.intro
-      div.container
-        div.intro-wrapper
-          div.intro-rotate
-            p.intro-p San José-based designer & dev
-            div.intro-underline
-          nav
-            ul
-              li 01
-              li 02
-              li 03
-              li 04
-              li 05
-              li 06
-
-      p whaehdskafhdsaklfhldkshflkdshflkdsahf
+    div.intro-wrapper
+      div.container.intro-flex
+        div.intro-rotate
+          p.intro-p San Jose-based designer & dev
+          div.intro-underline
+        nav
+          ul
+            li 01
+            li 02
+            li 02
+            li 02
+            li 02
+            li 02
 </template>
 
 <script>
@@ -29,27 +26,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  height: 100%;
-}
 
-.intro {
+.intro-wrapper {
   height: 100vh;
   background-color: #FF1100;
 }
 
-.intro-wrapper {
+.intro-flex {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  height: 100%;
+  flex-direction: column;
 }
 
 .intro-rotate {
+  padding-bottom: 50px;
   transform: rotate(90deg);
   transform-origin: 0 100%;
-  width: 272px;
-  padding-bottom: 50px;
+  width: 272px
 }
 
 .intro-p {
@@ -67,26 +60,27 @@ export default {
   background-color: white;
 }
 
-.wrapper {
-  display: flex;
-}
-
 nav {
-  align-self: center;
+  position: fixed;
+  display: flex;
+  align-self: flex-end;
+  height: 100%;
 }
 
 ul {
-  position: fixed;
-}
-
-li:not(:last-of-type) {
-  padding-bottom: 30px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
 }
 
 li {
   color: white;
   font-weight: 200;
   font-size: 16px;
+}
+
+li:not(:last-of-type) {
+  padding-bottom: 30px;
 }
 
 </style>
