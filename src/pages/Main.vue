@@ -4,9 +4,20 @@
 
     div.intro
       div.container
-        div.intro-rotate
-          p.intro-p San José-based designer & dev
-          div.intro-underline
+        div.intro-wrapper
+          div.intro-rotate
+            p.intro-p San José-based designer & dev
+            div.intro-underline
+          nav
+            ul
+              li 01
+              li 02
+              li 03
+              li 04
+              li 05
+              li 06
+
+      p whaehdskafhdsaklfhldkshflkdshflkdsahf
 </template>
 
 <script>
@@ -18,15 +29,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  height: 100%;
+}
+
 .intro {
   height: 100vh;
   background-color: #FF1100;
+}
+
+.intro-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
 }
 
 .intro-rotate {
   transform: rotate(90deg);
   transform-origin: 0 100%;
   width: 272px;
+  padding-bottom: 50px;
 }
 
 .intro-p {
@@ -43,4 +66,27 @@ export default {
   height: 4px;
   background-color: white;
 }
+
+.wrapper {
+  display: flex;
+}
+
+nav {
+  align-self: center;
+}
+
+ul {
+  position: fixed;
+}
+
+li:not(:last-of-type) {
+  padding-bottom: 30px;
+}
+
+li {
+  color: white;
+  font-weight: 200;
+  font-size: 16px;
+}
+
 </style>

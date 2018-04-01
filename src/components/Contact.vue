@@ -16,7 +16,12 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-    position: fixed;
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+
+  height: 100%;
+  padding-bottom: 50px;
 }
 
 li {
@@ -24,7 +29,10 @@ li {
   color: white;
 
   transform: rotate(90deg);
-  transform-origin: 0 100%;
-  width: 20px;
+  transform-origin: 100% 0%;
+}
+
+li:not(:last-of-type) {
+  padding-bottom: 40px;
 }
 </style>
