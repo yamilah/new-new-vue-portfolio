@@ -6,6 +6,7 @@
 import '../node_modules/normalize.css/normalize.css'
 import '../node_modules/simple-line-icons/fonts/**'
 import '../node_modules/simple-line-icons/css/simple-line-icons.css'
+// import './anticon/iconfont.css'
 
 export default {
     name: 'app',

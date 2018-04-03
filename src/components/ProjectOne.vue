@@ -5,7 +5,7 @@ div.container.full-view
     p.project-description Lorem ipsum dolor sit amet whatever whatever whatever whatever
     div.link-wrapper
       p.link-view View project
-      p.icon-arrow-right
+      p.anticon.icon-arrowright
 </template>
 
 <script>
