@@ -15,13 +15,16 @@
             li 02
             li 02
             li 02
+
+    ProjectOne
 </template>
 
 <script>
 import Contact from '../components/Contact.vue'
+import ProjectOne from '../components/ProjectOne.vue'
 export default {
     name: 'Main',
-    components: {Contact}
+    components: {Contact, ProjectOne}
 }
 </script>
 
