@@ -1,10 +1,11 @@
 <template lang="pug">
 div.container.full-view
-  div.project-info.col-lg-3.offset-lg-1
+  div.project-info.col-lg-12.offset-lg-1
     p.project-year 2018
     div.date-line
-    p.project-name Scaife Digital Library
-    p.project-description Lorem ipsum dolor sit amet whatever whatever whatever whatever
+    div.project-wrapper.col-lg-6
+      p.project-name Hart Nautical Collection
+      p.project-description Lorem ipsum dolor sit amet asdjflkdshlkdahs asdkfd
     div.link-wrapper
       p.link-view View project
       p.anticon.icon-arrowright
@@ -44,14 +45,20 @@ export default {
 .date-line {
   margin-bottom: 20px;
   width: 2px;
-  height: 94px;
+  height: 294px;
   background-color: black;
 }
 
+.project-wrapper {
+  display: flex;
+  padding: 0;
+}
+
 .project-name {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 1.3;
+  padding-bottom: 10px;
 }
 
 .project-description {
@@ -59,8 +66,10 @@ export default {
   font-size: 16px;
   line-height: 1.8;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-bottom: 12px;
+
+  align-self: flex-end;
 }
 
 .link-wrapper {

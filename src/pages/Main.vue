@@ -17,14 +17,16 @@
             li 06
 
     ProjectOne
+    ProjectTwo
 </template>
 
 <script>
 import Contact from '../components/Contact.vue'
 import ProjectOne from '../components/ProjectOne.vue'
+import ProjectTwo from '../components/ProjectTwo.vue'
 export default {
     name: 'Main',
-    components: {Contact, ProjectOne}
+    components: {Contact, ProjectOne, ProjectTwo}
 }
 </script>
 
