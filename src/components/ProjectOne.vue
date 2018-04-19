@@ -1,6 +1,8 @@
 <template lang="pug">
 div.container.full-view
   div.project-info.col-lg-3.offset-lg-1
+    p.project-year 2018
+    div.date-line
     p.project-name Scaife Digital Library
     p.project-description Lorem ipsum dolor sit amet whatever whatever whatever whatever
     div.link-wrapper
@@ -18,6 +20,32 @@ export default {
 .full-view {
   width: 100vw;
   height: 100vh;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 80px;
+}
+
+.project-year {
+  margin-bottom: 60px;
+  margin-left: -3px;
+  width: 40px;
+
+  font-size: 12px;
+  letter-spacing: 4px;
+
+  transform: rotate(90deg);
+  transform-origin: 0 100%;
+}
+
+.date-line {
+  margin-bottom: 20px;
+  width: 2px;
+  height: 94px;
+  background-color: black;
 }
 
 .project-name {

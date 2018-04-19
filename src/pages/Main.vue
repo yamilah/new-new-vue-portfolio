@@ -11,10 +11,10 @@
           ul
             li 01
             li 02
-            li 02
-            li 02
-            li 02
-            li 02
+            li 03
+            li 04
+            li 05
+            li 06
 
     ProjectOne
 </template>
@@ -74,6 +74,7 @@ ul {
   display: flex;
   align-self: center;
   flex-direction: column;
+  align-items: flex-end;
 }
 
 li {
