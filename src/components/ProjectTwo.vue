@@ -19,7 +19,6 @@ export default {
 
 <style lang="scss" scoped>
 .full-view {
-  padding-top: 30vh;
   padding-bottom: 30vh;
 }
 
