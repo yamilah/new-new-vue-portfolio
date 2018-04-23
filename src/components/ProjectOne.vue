@@ -5,9 +5,10 @@ div.container.full-view
     div.date-line
     p.project-name Scaife Digital Library
     p.project-description Lorem ipsum dolor sit amet whatever whatever whatever whatever
-    div.link-wrapper
-      p.link-view View project
-      p.anticon.icon-arrowright
+    router-link(to='scaife')
+      div.link-wrapper
+        p.link-view View project
+        p.anticon.icon-arrowright
 </template>
 
 <script>
@@ -17,6 +18,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .full-view {
   padding-top: 30vh;
   padding-bottom: 30vh;
