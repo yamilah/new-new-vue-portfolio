@@ -3,7 +3,7 @@ div.container.full-view
   div.project-info.col-lg-3.offset-lg-1
     p.project-year 2018
     div.date-line
-    p.project-name Scaife Digital Library
+    h1.project-name Scaife Digital Library
     p.project-description Lorem ipsum dolor sit amet whatever whatever whatever whatever
     router-link(to='scaife')
       div.link-wrapper
@@ -54,6 +54,8 @@ export default {
   font-size: 60px;
   font-weight: 700;
   line-height: 1.3;
+
+  margin: 0;
 }
 
 .project-description {

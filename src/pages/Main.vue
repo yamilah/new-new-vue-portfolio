@@ -4,9 +4,11 @@
 
     div.intro-wrapper
       div.container.intro-flex
+
         div.intro-rotate
           p.intro-p San Jose-based designer & dev
           div.intro-underline
+
         nav
           ul
             li 01
@@ -17,6 +19,7 @@
             li 06
 
     ProjectOne
+    ProjectThree
     ProjectTwo
 </template>
 
@@ -24,9 +27,10 @@
 import Contact from '../components/Contact.vue'
 import ProjectOne from '../components/ProjectOne.vue'
 import ProjectTwo from '../components/ProjectTwo.vue'
+import ProjectThree from '../components/ProjectThree.vue'
 export default {
     name: 'Main',
-    components: {Contact, ProjectOne, ProjectTwo}
+    components: {Contact, ProjectOne, ProjectTwo, ProjectThree}
 }
 </script>
 

@@ -4,7 +4,7 @@ div.container.full-view
     p.project-year 2018
     div.date-line
     div.project-wrapper.col-lg-6
-      p.project-name Hart Nautical Collection
+      h1.project-name Hart Nautical Collection
       p.project-description Lorem ipsum dolor sit amet asdjflkdshlkdahs asdkfd
     div.link-wrapper
       p.link-view View project
@@ -13,7 +13,7 @@ div.container.full-view
 
 <script>
 export default {
-  name: 'ProjectOne'
+  name: 'ProjectTwo'
 }
 </script>
 
@@ -58,6 +58,7 @@ export default {
   font-weight: 700;
   line-height: 1.3;
   padding-bottom: 10px;
+  margin: 0;
 }
 
 .project-description {
@@ -66,7 +67,7 @@ export default {
   line-height: 1.8;
 
   padding-left: 80px;
-  padding-bottom: 12px;
+  padding-bottom: 15px;
 
   align-self: flex-end;
 }
