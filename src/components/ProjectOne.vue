@@ -1,19 +1,23 @@
 <template lang="pug">
-div.container.full-view
-  div.project-info.col-lg-3.offset-lg-1
-    p.project-year 2018
-    div.date-line
-    h1.project-name Scaife Digital Library
-    p.project-description Lorem ipsum dolor sit amet whatever whatever whatever whatever
-    router-link(to='scaife')
-      div.link-wrapper
-        p.link-view View project
-        p.anticon.icon-arrowright
+ProjectBackground(img='yellow_line')
+  div.container.full-view
+    div.project-info.col-lg-3.offset-lg-1
+      p.project-year 2018
+      div.date-line
+      h1.project-name Scaife Digital Library
+      p.project-description Lorem ipsum dolor sit amet whatever whatever whatever whatever
+      router-link(to='scaife')
+        div.link-wrapper
+          p.link-view View project
+          p.anticon.icon-arrowright
 </template>
 
 <script>
+import ProjectBackground from './ProjectBackground.vue'
+
 export default {
-  name: 'ProjectOne'
+  name: 'ProjectOne',
+  components: {ProjectBackground}
 }
 </script>
 
@@ -27,8 +31,6 @@ export default {
 .project-info {
   display: flex;
   flex-direction: column;
-
-  margin-top: 80px;
 }
 
 .project-year {
