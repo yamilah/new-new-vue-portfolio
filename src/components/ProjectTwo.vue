@@ -19,14 +19,14 @@ export default {
 
 <style lang="scss" scoped>
 .full-view {
-  margin-top: 800px;
+  // margin-top: 800px;
 }
 
 .project-info {
   display: flex;
   flex-direction: column;
 
-  margin-top: 80px;
+  // margin-top: 80px;
 }
 
 .project-year {

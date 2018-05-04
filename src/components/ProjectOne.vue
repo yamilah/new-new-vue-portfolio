@@ -1,6 +1,5 @@
 <template lang="pug">
-div
-  ProjectBackground(img='yellow_line').project-bg
+ProjectBackground(img='yellow_line').project-bg.content-wrapper
   div.container.full-view
     div.project-info.col-lg-3.offset-lg-1
       p.project-year 2018
@@ -12,10 +11,13 @@ div
           p.link-view View project
           p.anticon.icon-arrowright
 
-  div.mockups-wrapper
-    div.mockups
-      img(src='../assets/scaife-1.svg').scaife-1
-      img(src='../assets/scaife-2.svg').scaife-2
+  div.image-wrapper
+    div.mockups-wrapper
+      div.mockups
+        img(src='../assets/scaife-1.svg').scaife-1
+        img(src='../assets/scaife-2.svg').scaife-2
+
+  div.gradient
 </template>
 
 <script>
@@ -29,16 +31,17 @@ export default {
 
 <style lang="scss" scoped>
 
-.project-bg {
-  position: absolute;
-  top: 720px;
-  width: 100%;
-  height: 756px;
-  z-index: -5;
+.content-wrapper {
+  position: relative;
+  height: 1030px;
+
+  overflow-y: hidden;
 }
 
-.full-view {
-  margin-top: 80px;
+.project-bg {
+  background-size: cover;
+  z-index: -2;
+  padding-top: 80px;
 }
 
 .project-info {
@@ -102,11 +105,14 @@ export default {
   font-size: 10px;
 }
 
+.image-wrapper {
+  position: relative;
+}
+
 .mockups-wrapper {
   position: absolute;
-  top: 460px;
-  right: 270px;
-
+  top: -930px;
+  right: 280px;
   z-index: -1;
 }
 
@@ -118,5 +124,15 @@ export default {
 
 .scaife-1 {
   padding-bottom: 50px;
+}
+
+.gradient {
+  height: 237px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }
 </style>
