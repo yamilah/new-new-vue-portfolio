@@ -20,7 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 .full-view {
-  padding-bottom: 30vh;
+  margin-top: 800px;
 }
 
 .project-info {

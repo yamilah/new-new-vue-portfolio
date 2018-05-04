@@ -14,7 +14,7 @@ export default {
   props: ['img'],
   computed: {
     style: function() {
-      return `background: url(${images[this.img]}) no-repeat center center;`
+      return `background: url(${images[this.img]}) no-repeat;`
     }
   }
 }

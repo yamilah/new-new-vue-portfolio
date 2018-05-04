@@ -1,5 +1,6 @@
 <template lang="pug">
-ProjectBackground(img='yellow_line')
+div
+  ProjectBackground(img='yellow_line').project-bg
   div.container.full-view
     div.project-info.col-lg-3.offset-lg-1
       p.project-year 2018
@@ -10,6 +11,11 @@ ProjectBackground(img='yellow_line')
         div.link-wrapper
           p.link-view View project
           p.anticon.icon-arrowright
+
+  div.mockups-wrapper
+    div.mockups
+      img(src='../assets/scaife-1.svg').scaife-1
+      img(src='../assets/scaife-2.svg').scaife-2
 </template>
 
 <script>
@@ -23,9 +29,16 @@ export default {
 
 <style lang="scss" scoped>
 
+.project-bg {
+  position: absolute;
+  top: 720px;
+  width: 100%;
+  height: 756px;
+  z-index: -5;
+}
+
 .full-view {
-  padding-top: 30vh;
-  padding-bottom: 30vh;
+  margin-top: 80px;
 }
 
 .project-info {
@@ -87,5 +100,23 @@ export default {
 
 .icon-arrow-right {
   font-size: 10px;
+}
+
+.mockups-wrapper {
+  position: absolute;
+  top: 460px;
+  right: 270px;
+
+  z-index: -1;
+}
+
+.mockups {
+  display: flex;
+  flex-direction: column;
+  transform: rotate(-315deg);
+}
+
+.scaife-1 {
+  padding-bottom: 50px;
 }
 </style>

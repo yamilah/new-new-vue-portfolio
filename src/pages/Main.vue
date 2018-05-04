@@ -99,6 +99,7 @@ nav {
   display: flex;
   align-self: flex-end;
   height: 100%;
+  z-index: 1;
 }
 
 ul {
