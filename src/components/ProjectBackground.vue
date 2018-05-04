@@ -5,16 +5,18 @@ div(:style='style')
 
 <script>
 import yellow_line from "../assets/yellow-line.svg"
+import intro from "../assets/intro.svg"
 
 let images = {
-  yellow_line
+  yellow_line,
+  intro
 }
 
 export default {
   props: ['img'],
   computed: {
     style: function() {
-      return `background-image: url(${images[this.img]}); background-position: center center; background-repeat: no-repeat;`
+      return `background-image: url(${images[this.img]}); background-repeat: no-repeat;`
     }
   }
 }

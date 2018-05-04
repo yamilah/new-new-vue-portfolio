@@ -2,7 +2,7 @@
   div.main
     Contact
 
-    div(ref='intro_wrapper').intro-wrapper
+    ProjectBackground(img='intro' ref='intro_wrapper').intro-wrapper
       div.container.intro-flex
 
         div.intro-rotate
@@ -28,12 +28,14 @@ import Contact from '../components/Contact.vue'
 import ProjectOne from '../components/ProjectOne.vue'
 import ProjectTwo from '../components/ProjectTwo.vue'
 import ProjectThree from '../components/ProjectThree.vue'
+import ProjectBackground from '../components/ProjectBackground.vue'
+
 export default {
     name: 'Main',
-    components: {Contact, ProjectOne, ProjectTwo, ProjectThree},
+    components: {Contact, ProjectOne, ProjectTwo, ProjectThree, ProjectBackground},
     methods: {
       handleScroll (event) {
-        let project_nav = this.$refs['intro_wrapper']
+        let project_nav = this.$refs['intro_wrapper'].$el
         let bottom = project_nav.getBoundingClientRect().bottom
 
         this.projectnav_dark = bottom < window.innerHeight/2
@@ -69,6 +71,8 @@ export default {
 .intro-wrapper {
   height: 100vh;
   background-color: #FF1100;
+  background-position: bottom right;
+  background-size: 70%;
 }
 
 .intro-flex {

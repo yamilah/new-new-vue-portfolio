@@ -40,6 +40,7 @@ export default {
 
 .project-bg {
   background-size: cover;
+  background-position: center center;
   padding-top: 80px;
 }
 
