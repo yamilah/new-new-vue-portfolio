@@ -40,7 +40,6 @@ export default {
 
 .project-bg {
   background-size: cover;
-  z-index: -2;
   padding-top: 80px;
 }
 
@@ -113,7 +112,6 @@ export default {
   position: absolute;
   top: -930px;
   right: 280px;
-  z-index: -1;
 }
 
 .mockups {
@@ -122,8 +120,13 @@ export default {
   transform: rotate(-315deg);
 }
 
+.scaife-1, .scaife-2 {
+  box-shadow: 0 122px 94px 0 rgba(0,0,0,0.10);
+  border-radius: 58.21px;
+}
+
 .scaife-1 {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .gradient {

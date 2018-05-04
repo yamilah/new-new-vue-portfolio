@@ -61,6 +61,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.main {
+  z-index: 1;
+}
+
 .intro-wrapper {
   height: 100vh;
   background-color: #FF1100;
