@@ -35,8 +35,8 @@ export default {
     components: {Contact, ProjectOne, ProjectTwo, ProjectThree, ProjectBackground},
     methods: {
       handleScroll (event) {
-        let project_nav = this.$refs['intro_wrapper'].$el
-        let bottom = project_nav.getBoundingClientRect().bottom
+        let intro_wrapper = this.$refs['intro_wrapper'].$el
+        let bottom = intro_wrapper.getBoundingClientRect().bottom
 
         this.projectnav_dark = bottom < window.innerHeight/2
       }
@@ -63,11 +63,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-.main {
-  z-index: 1;
-}
-
 .intro-wrapper {
   height: 100vh;
   background-color: #FF1100;
@@ -119,7 +114,7 @@ ul {
 }
 
 li {
-  transition: color 0.3s;
+  transition: color 0.3s ease;
   color: white;
   font-weight: 200;
   font-size: 16px;
@@ -130,7 +125,7 @@ li:not(:last-of-type) {
 }
 
 .projectnav-dark li {
-  transition: color 0.3s;
+  transition: color 0.3s ease;
   color: black;
 }
 </style>

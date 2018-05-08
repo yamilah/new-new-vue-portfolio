@@ -33,8 +33,8 @@ export default {
 
 .content-wrapper {
   position: relative;
-  height: 1030px;
 
+  height: 1030px;
   overflow-y: hidden;
 }
 
@@ -42,6 +42,7 @@ export default {
   background-size: cover;
   background-position: center center;
   padding-top: 80px;
+  overflow-x: hidden;
 }
 
 .project-info {
@@ -131,12 +132,11 @@ export default {
 }
 
 .gradient {
-  height: 237px;
   position: absolute;
+
+  height: 237px;
   bottom: 0;
   width: 100%;
-
-  background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }
 </style>
