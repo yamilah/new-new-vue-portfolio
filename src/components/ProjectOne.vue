@@ -41,7 +41,7 @@ export default {
   background-size: 100vw;
   background-position: center center;
   padding-top: 80px;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .project-info {
