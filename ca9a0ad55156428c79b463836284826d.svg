@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="165px" height="165px" viewBox="0 0 165 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="68.237071%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#E1D5ED" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="XL" transform="translate(-120.000000, -3507.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-5" transform="translate(-2.000000, 3332.000000)">
+                <circle id="Oval-3" cx="204.5" cy="257.5" r="82.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
