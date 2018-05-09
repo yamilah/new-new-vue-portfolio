@@ -1,5 +1,5 @@
 <template lang="pug">
-ProjectBackground(img='hnc_line').project-bg.content-wrapper
+ProjectBackground(img='hnc_line').project-bg
   div.container.full-view
     div.image-wrapper.offset-lg-2
       img(src='../assets/hnc-red.png').hnc-1

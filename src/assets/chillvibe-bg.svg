@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1259px" viewBox="0 0 1440 1259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="71.5128079%" y1="72.5938081%" x2="67.9424088%" y2="61.393726%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F3EBFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="XL" transform="translate(0.000000, -3332.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-5" transform="translate(-2.000000, 3332.000000)">
+                <path d="M1443,12.6777318 L1442.04701,1259 L0,1259 L1.91230767,1000.71157 C4.06555331,831.838149 69.2807747,708.100958 197.557972,629.5 C389.973767,511.598562 706.446248,674.765845 967.56399,580.283931 C1064.66202,545.150323 1053.61772,157.815451 1162.0814,64.5989193 C1234.39052,2.45456444 1328.03006,-14.8524981 1443,12.6777318 Z" id="Path-5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

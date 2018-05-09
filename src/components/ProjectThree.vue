@@ -1,33 +1,44 @@
 <template lang="pug">
-div.container
-  div.offset-lg-2
-    div.offset-lg-7
-      img(src='../assets/chillvibe-timer.png').chillvibe-3
-    div.image-wrapper
-      img(src='../assets/chillvibe-phone.png').chillvibe-1
-      img(src='../assets/chillvibe-player.png').chillvibe-2
+ProjectBackground(img='chillvibe_bg').project-bg
+  div.container
+    img(src='../assets/chillvibe-decor.svg').chillvibe-decor
+    div.offset-lg-2.image-wrapper
+        img(src='../assets/chillvibe-phone.png').chillvibe-1
+        img(src='../assets/chillvibe-player.png').chillvibe-2
+        img(src='../assets/chillvibe-timer.png').chillvibe-3
 
-  div.project-info.col-lg-8.offset-lg-3
-    h1 chillvi.be
-    div.project-wrapper
-      p.project-year 2017
-      div.date-line
-      div.description-wrapper
-        p.project-description Lorem ipsum dolor sit amet asdjflkdshlkdahs asdkfd
-        div.link-wrapper
-          p.link-view View project
-          p.anticon.icon-arrowright
+    div.project-info.col-lg-8.offset-lg-3
+      h1 chillvi.be
+      div.project-wrapper
+        p.project-year 2017
+        div.date-line
+        div.description-wrapper
+          p.project-description Lorem ipsum dolor sit amet asdjflkdshlkdahs asdkfd
+          div.link-wrapper
+            p.link-view View project
+            p.anticon.icon-arrowright
 </template>
 
 <script>
+import ProjectBackground from './ProjectBackground.vue'
+
 export default {
-  name: 'ProjectThree'
+  name: 'ProjectThree',
+  components: {ProjectBackground}
 }
 </script>
 
 <style lang="scss" scoped>
+.project-bg {
+  background-size: 100vw;
+  background-position: bottom right;
+  padding-top: 300px;
+  overflow: hidden;
+}
+
 .image-wrapper {
   display: flex;
+  position: relative;
 }
 
 .chillvibe-1,
@@ -47,8 +58,9 @@ export default {
 }
 
 .chillvibe-3 {
-  position: relative;
-  top: 200px;
+  position: absolute;
+  top: -180px;
+  right: 160px;
 }
 
 .project-info {

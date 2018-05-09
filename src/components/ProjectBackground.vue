@@ -6,11 +6,13 @@ div(:style='style')
 <script>
 import scaife_line from "../assets/scaife-line.svg"
 import hnc_line from "../assets/hnc-line.svg"
+import chillvibe_bg from "../assets/chillvibe-bg.svg"
 import intro from "../assets/intro.svg"
 
 let images = {
   scaife_line,
   hnc_line,
+  chillvibe_bg,
   intro
 }
 
