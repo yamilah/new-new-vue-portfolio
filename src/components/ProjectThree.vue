@@ -1,5 +1,12 @@
 <template lang="pug">
-div.container.full-view
+div.container
+  div.offset-lg-2
+    div.offset-lg-7
+      img(src='../assets/chillvibe-timer.png').chillvibe-3
+    div.image-wrapper
+      img(src='../assets/chillvibe-phone.png').chillvibe-1
+      img(src='../assets/chillvibe-player.png').chillvibe-2
+
   div.project-info.col-lg-8.offset-lg-3
     h1 chillvi.be
     div.project-wrapper
@@ -19,8 +26,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.full-view {
-  // margin-top: 800px;
+.screen-wrapper {
+  display: flex;
+}
+
+.chillvibe-1,
+.chillvibe-2,
+.chillvibe-3 {
+  box-shadow: 0 52px 65px 0 rgba(0,0,0,0.10);
+}
+
+.chillvibe-1 {
+  border-radius: 49.25px;
+}
+
+.chillvibe-2 {
+  align-self: center;
+  margin-left: 20px;
+  border-radius: 9px;
+}
+
+.chillvibe-3 {
+  position: relative;
+  top: 200px;
 }
 
 .project-info {

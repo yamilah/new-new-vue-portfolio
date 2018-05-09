@@ -1,5 +1,5 @@
 <template lang="pug">
-ProjectBackground(img='yellow_line').project-bg.content-wrapper
+ProjectBackground(img='scaife_line').project-bg.content-wrapper
   div.container.full-view
     div.project-info.col-lg-3.offset-lg-1
       p.project-year 2018
@@ -33,16 +33,15 @@ export default {
 
 .content-wrapper {
   position: relative;
-
   height: 1030px;
-  overflow-y: hidden;
+  margin-bottom: 150px;
 }
 
 .project-bg {
-  background-size: cover;
+  background-size: 100vw;
   background-position: center center;
   padding-top: 80px;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .project-info {

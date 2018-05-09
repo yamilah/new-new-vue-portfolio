@@ -1,32 +1,75 @@
 <template lang="pug">
-div.container.full-view
-  div.project-info.col-lg-12.offset-lg-1
-    p.project-year 2018
-    div.date-line
-    div.project-wrapper.col-lg-6
-      h1.project-name Hart Nautical Collection
-      p.project-description Lorem ipsum dolor sit amet asdjflkdshlkdahs asdkfd
-    div.link-wrapper
-      p.link-view View project
-      p.anticon.icon-arrowright
+ProjectBackground(img='hnc_line').project-bg.content-wrapper
+  div.container.full-view
+    div.image-wrapper.offset-lg-2
+      img(src='../assets/hnc-red.png').hnc-1
+      img(src='../assets/hnc-main.png').hnc-2
+      img(src='../assets/hnc-mobile.png').hnc-3
+
+    div.project-info.col-lg-12.offset-lg-1
+      p.project-year 2018
+      div.date-line
+      div.project-wrapper.col-lg-6
+        h1.project-name Hart Nautical Collection
+        p.project-description Lorem ipsum dolor sit amet asdjflkdshlkdahs asdkfd
+      div.link-wrapper
+        p.link-view View project
+        p.anticon.icon-arrowright
 </template>
 
 <script>
+import ProjectBackground from './ProjectBackground.vue'
+
 export default {
-  name: 'ProjectTwo'
+  name: 'ProjectTwo',
+  components: {ProjectBackground}
 }
 </script>
 
 <style lang="scss" scoped>
-.full-view {
-  // margin-top: 800px;
+.project-bg {
+  background-size: 100vw;
+  background-position: center center;
+}
+
+.image-wrapper {
+  display: flex;
+  position: relative;
+
+  top: 80px;
+}
+
+.hnc-1,
+.hnc-3 {
+  border-radius: 10px;
+  box-shadow: 0 52px 75px 0 rgba(0,0,0,0.10);
+}
+
+.hnc-2,
+.hnc-3 {
+  position: absolute;
+}
+
+.hnc-1 {
+  z-index: 2;
+}
+
+.hnc-2 {
+  left: 95px;
+  top: 110px;
+
+  border-radius: 20px;
+  box-shadow: 0 75px 75px 0 rgba(0,0,0,0.10);
+}
+
+.hnc-3 {
+  top: 340px;
+  right: 45px;
 }
 
 .project-info {
   display: flex;
   flex-direction: column;
-
-  // margin-top: 80px;
 }
 
 .project-year {

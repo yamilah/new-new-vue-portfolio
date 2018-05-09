@@ -4,11 +4,13 @@ div(:style='style')
 </template>
 
 <script>
-import yellow_line from "../assets/yellow-line.svg"
+import scaife_line from "../assets/scaife-line.svg"
+import hnc_line from "../assets/hnc-line.svg"
 import intro from "../assets/intro.svg"
 
 let images = {
-  yellow_line,
+  scaife_line,
+  hnc_line,
   intro
 }
 
@@ -20,6 +22,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style lang="css">

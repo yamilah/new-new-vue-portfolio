@@ -19,8 +19,8 @@
             li 06
 
     ProjectOne
-    ProjectThree
     ProjectTwo
+    ProjectThree
 </template>
 
 <script>
