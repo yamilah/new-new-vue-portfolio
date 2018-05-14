@@ -1,5 +1,7 @@
 <template lang="pug">
 div
+  Contact
+
   img(src='../assets/scaife-intro.png').intro-img.full-width
   div.container
     div.row.intro-info
@@ -20,7 +22,6 @@ div
 
   div.container.process
     h3.offset-lg-1 Process
-
     div.row.paragraph
       p.col-lg-5.offset-lg-2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
       div.col-lg-4
@@ -29,13 +30,17 @@ div
         img(src='../assets/scaife-detail.png').col
 
   div.prototype.row
-    div.col
+    div.col.offset-lg-1
       iframe(src='https://framer.cloud/rUPQX/' width='500' height='950' frameborder='0').prototype-width
     p.pullquote-lg.col Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 </template>
 
 <script>
+import Contact from '../components/Contact.vue'
+
 export default {
+  name: 'DetailOne',
+  components: {Contact}
 }
 </script>
 
@@ -127,7 +132,8 @@ h3 {
   font-weight: 700;
   font-size: 80px;
 
-  padding-bottom: 30px;
+  transform: rotate(90deg);
+  transform-origin: 0 100%;
 }
 
 .pullquote-sm {
