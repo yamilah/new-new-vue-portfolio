@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Main from './pages/Main'
 import DetailOne from './pages/DetailOne.vue'
+import DetailTwo from './pages/DetailTwo.vue'
 
 Vue.use(Router)
 
@@ -16,6 +17,11 @@ export default new Router({
       path: '/scaife',
       name: 'DetailOne',
       component: DetailOne
+    },
+    {
+      path: '/hnc',
+      name: 'DetailTwo',
+      component: DetailTwo
     }
   ]
 })

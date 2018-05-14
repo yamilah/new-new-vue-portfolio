@@ -150,7 +150,7 @@ h3 {
 .prototype {
   margin-top: 150px;
 
-  background-color: yellow;
+  background-color: #F8E71C;
 }
 
 .prototype-width {

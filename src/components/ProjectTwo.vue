@@ -12,9 +12,10 @@ ProjectBackground(img='hnc_line').project-bg
       div.project-wrapper.col-lg-6
         h1.project-name Hart Nautical Collection
         p.project-description Lorem ipsum dolor sit amet asdjflkdshlkdahs asdkfd
-      div.link-wrapper
-        p.link-view View project
-        p.anticon.icon-arrowright
+      router-link(to='hnc')
+        div.link-wrapper
+          p.link-view View project
+          p.anticon.icon-arrowright
 </template>
 
 <script>
