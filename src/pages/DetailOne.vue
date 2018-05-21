@@ -12,7 +12,8 @@ div
         h2.right-align Scaife Digital Library
         div.more-info
           p User Experience Design, Visual Design, Motion Design
-          p Sketch, Invision, Framer, CoffeeScript
+          p Sketch, Invision, Freehand, Framer, CoffeeScript, Bootstrap
+          p Responsive webapp
       section.paragraph.about.col-lg-5
         p I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
         p The purpose of this project would be to effectively expose all the academic research and resources to multiple stakeholders: students, researchers, and professors.
@@ -44,7 +45,7 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .full-width {
   width: 100vw;
 }
