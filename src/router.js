@@ -4,6 +4,7 @@ import Main from './pages/Main'
 import DetailOne from './pages/DetailOne.vue'
 import DetailTwo from './pages/DetailTwo.vue'
 import DetailThree from './pages/DetailThree.vue'
+import DetailFour from './pages/DetailFour.vue'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/chillvibe',
       name: 'DetailThree',
       component: DetailThree
+    },
+    {
+      path: '/uxpa',
+      name: 'DetailFour',
+      component: DetailFour
     }
   ]
 })
