@@ -1,5 +1,7 @@
 <template lang="pug">
   div
+    Contact
+
     img(src='../assets/hnc-intro.png').intro-img.full-width
     div.container.title-wrapper
       div.row.title-content

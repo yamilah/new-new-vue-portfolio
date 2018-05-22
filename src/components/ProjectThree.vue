@@ -14,9 +14,10 @@ ProjectBackground(img='chillvibe_bg').project-bg
         div.date-line
         div.description-wrapper
           p.project-description Lorem ipsum dolor sit amet asdjflkdshlkdahs asdkfd
-          div.link-wrapper
-            p.link-view View project
-            p.anticon.icon-arrowright
+          router-link(to='chillvibe')
+            div.link-wrapper
+              p.link-view View project
+              p.anticon.icon-arrowright
 </template>
 
 <script>

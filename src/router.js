@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Main from './pages/Main'
 import DetailOne from './pages/DetailOne.vue'
 import DetailTwo from './pages/DetailTwo.vue'
+import DetailThree from './pages/DetailThree.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/hnc',
       name: 'DetailTwo',
       component: DetailTwo
+    },
+    {
+      path: '/chillvibe',
+      name: 'DetailThree',
+      component: DetailThree
     }
   ]
 })
