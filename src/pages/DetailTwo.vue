@@ -2,7 +2,7 @@
   div
     Contact
 
-    img(src='../assets/hnc-intro.png').intro-img.full-width
+    img(src='../assets/hnc-intro.png').full-width
     div.container.title-wrapper
       div.row.title-content
         h1 HNC
@@ -98,10 +98,6 @@ h2 {
 
 .more-info p:last-of-type {
   border-bottom: 2px solid black;
-}
-
-.more-info p:not(:last-child) {
-
 }
 
 .process-wrapper {
