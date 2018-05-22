@@ -34,14 +34,17 @@ div
     div.col.offset-lg-1
       iframe(src='https://framer.cloud/rUPQX/' width='500' height='950' frameborder='0').prototype-width
     p.pullquote-lg.col Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+  Footer
 </template>
 
 <script>
 import Contact from '../components/Contact.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
   name: 'DetailOne',
-  components: {Contact}
+  components: {Contact, Footer}
 }
 </script>
 

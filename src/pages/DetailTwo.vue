@@ -36,14 +36,17 @@
         div.col-lg-4.offset-lg-2
           p.quote “
           p.pullquote As a professor, I need to be able to create and share lesson plans on the fly.
+
+    Footer
 </template>
 
 <script>
 import Contact from '../components/Contact.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
   name: 'DetailTwo',
-  components: {Contact}
+  components: {Contact, Footer}
 }
 </script>
 

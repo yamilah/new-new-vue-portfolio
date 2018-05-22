@@ -21,10 +21,13 @@
     ProjectOne
     ProjectTwo
     ProjectThree
+
+    Footer
 </template>
 
 <script>
 import Contact from '../components/Contact.vue'
+import Footer from '../components/Footer.vue'
 import ProjectOne from '../components/ProjectOne.vue'
 import ProjectTwo from '../components/ProjectTwo.vue'
 import ProjectThree from '../components/ProjectThree.vue'
@@ -32,7 +35,7 @@ import ProjectBackground from '../components/ProjectBackground.vue'
 
 export default {
     name: 'Main',
-    components: {Contact, ProjectOne, ProjectTwo, ProjectThree, ProjectBackground},
+    components: {Contact, Footer, ProjectOne, ProjectTwo, ProjectThree, ProjectBackground},
     methods: {
       handleScroll (event) {
         let intro_wrapper = this.$refs['intro_wrapper'].$el

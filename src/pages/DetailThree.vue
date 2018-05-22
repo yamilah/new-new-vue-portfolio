@@ -17,14 +17,17 @@
           p.paragraph I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age.
 
     img(src='../assets/chillvibe-1.jpg').full-width
+
+    Footer
 </template>
 
 <script>
 import Contact from '../components/Contact.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
   name: 'DetailTwo',
-  components: {Contact}
+  components: {Contact, Footer}
 }
 </script>
 
