@@ -1,5 +1,6 @@
 <template lang="pug">
   div.main
+    TopNav
     Contact
 
     ProjectBackground(img='intro' ref='intro_wrapper').intro-wrapper
@@ -27,6 +28,7 @@
 </template>
 
 <script>
+import TopNav from '../components/TopNav.vue'
 import Contact from '../components/Contact.vue'
 import Footer from '../components/Footer.vue'
 import ProjectBackground from '../components/ProjectBackground.vue'
@@ -37,7 +39,7 @@ import ProjectFour from '../components/ProjectFour.vue'
 
 export default {
     name: 'Main',
-    components: {Contact, Footer, ProjectBackground, ProjectOne, ProjectTwo, ProjectThree, ProjectFour},
+    components: {Contact, TopNav, Footer, ProjectBackground, ProjectOne, ProjectTwo, ProjectThree, ProjectFour},
     methods: {
       handleScroll (event) {
         let intro_wrapper = this.$refs['intro_wrapper'].$el

@@ -1,5 +1,6 @@
 <template lang="pug">
   div
+    TopNav
     Contact
 
     img(src='../assets/hnc-intro.png').full-width
@@ -43,10 +44,11 @@
 <script>
 import Contact from '../components/Contact.vue'
 import Footer from '../components/Footer.vue'
+import TopNav from '../components/TopNav.vue'
 
 export default {
   name: 'DetailTwo',
-  components: {Contact, Footer}
+  components: {Contact, Footer, TopNav}
 }
 </script>
 

@@ -1,5 +1,6 @@
 <template lang="pug">
 div
+  TopNav
   Contact
 
   img(src='../assets/scaife-intro.png').intro-img.full-width
@@ -41,10 +42,11 @@ div
 <script>
 import Contact from '../components/Contact.vue'
 import Footer from '../components/Footer.vue'
+import TopNav from '../components/TopNav.vue'
 
 export default {
   name: 'DetailOne',
-  components: {Contact, Footer}
+  components: {Contact, Footer, TopNav}
 }
 </script>
 
