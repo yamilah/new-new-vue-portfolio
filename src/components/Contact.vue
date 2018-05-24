@@ -50,7 +50,7 @@ export default {
 }
 
 .icon-wrapper:not(:last-of-type) {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 nav {

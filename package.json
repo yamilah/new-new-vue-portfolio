@@ -26,7 +26,6 @@
     "parcel-bundler": "^1.6.2",
     "parcel-plugin-vue": "git+https://github.com/BoltDoggy/parcel-plugin-vue.git#7a96574d4aa1ea64ae8f5f7cf8ad531ad8ce5837",
     "pug": "^2.0.3",
-    "simple-line-icons": "^2.4.1",
     "vue": "^2.5.13",
     "vue-hot-reload-api": "^2.2.4",
     "vue-router": "^3.0.1",

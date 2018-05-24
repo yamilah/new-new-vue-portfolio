@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  p whasdhf
+  p about page
 </template>
 
 <script>
