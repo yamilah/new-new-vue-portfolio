@@ -49,6 +49,15 @@ export default {
   font-size: 16px;
 }
 
+.icon-wrapper,
+.icon-wrapper:hover {
+  transition: transform 0.1s ease;
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.08);
+}
+
 .icon-wrapper:not(:last-of-type) {
   margin-bottom: 15px;
 }
