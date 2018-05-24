@@ -2,9 +2,12 @@
   div.container
     nav(:class='navcolor')
       ul
-        li.icon-envelope
-        li.icon-social-linkedin
-        li.icon-social-github
+        li.icon-wrapper
+          a(href='mailto:hello@yamilah.com').icon.anticon.icon-mail
+        li.icon-wrapper
+          a(href='https://www.linkedin.com/in/yamilah', target='_blank').icon.anticon.icon-linkedin-square
+        li.icon-wrapper
+          a(href='https://www.github.com/yamilah', target='_blank').icon.anticon.icon-github
 </template>
 
 <script>
@@ -37,16 +40,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.contactnav-dark {
-  color: black;
+.icon {
+  display: block;
+  color: white;
+  padding: 10px;
+  background-color: #ff1100;
 
-  transition: color 0.3s ease;
+  font-size: 16px;
+}
+
+.icon-wrapper:not(:last-of-type) {
+  margin-bottom: 30px;
 }
 
 nav {
   position: fixed;
   display: flex;
-  color: white;
 
   align-items: flex-end;
   height: 100%;
@@ -54,16 +63,5 @@ nav {
   z-index: 1;
 
   transition: color 0.3s ease;
-}
-
-li {
-  font-size: 20px;
-
-  transform: rotate(90deg);
-  transform-origin: 100% 0%;
-}
-
-li:not(:last-of-type) {
-  padding-bottom: 40px;
 }
 </style>

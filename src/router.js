@@ -5,6 +5,7 @@ import DetailOne from './pages/DetailOne.vue'
 import DetailTwo from './pages/DetailTwo.vue'
 import DetailThree from './pages/DetailThree.vue'
 import DetailFour from './pages/DetailFour.vue'
+import About from './pages/About.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/uxpa',
       name: 'DetailFour',
       component: DetailFour
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About
     }
   ]
 })

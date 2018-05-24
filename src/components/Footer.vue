@@ -8,13 +8,16 @@ div.footer-wrapper
       div.col-lg-3
         h2 say hi
         div.line
-        p hello@yamilah.com
+        a(href='mailto:hello@yamilah.com')
+          p hello@yamilah.com
 
       div.col-lg-3
         h2 link up
         div.line
-        p LinkedIn
-        p GitHub
+        a(href='https://www.linkedin.com/in/yamilah', target='_blank')
+          p LinkedIn
+        a(href='https://www.github.com/yamilah', target='_blank')
+          p GitHub
 </template>
 
 <script>

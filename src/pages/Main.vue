@@ -6,7 +6,7 @@
     ProjectBackground(img='intro' ref='intro_wrapper').intro-wrapper
       div.container.intro-flex
 
-        div.intro-rotate
+        div.intro-rotate.offset-lg-1
           p.intro-p San Jose-based designer &amp; dev
           div.intro-underline
 
@@ -16,8 +16,6 @@
             li 02
             li 03
             li 04
-            li 05
-            li 06
 
     ProjectOne
     ProjectTwo
@@ -84,9 +82,9 @@ export default {
 }
 
 .intro-rotate {
-  padding-bottom: 50px;
+  margin-top: 220px;
   transform: rotate(90deg);
-  transform-origin: 0 100%;
+  transform-origin: 50% 50%;
   width: 272px
 }
 
@@ -123,7 +121,7 @@ ul {
 li {
   transition: color 0.3s ease;
   color: white;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 16px;
 }
 

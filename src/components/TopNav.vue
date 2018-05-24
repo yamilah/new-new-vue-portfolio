@@ -1,14 +1,17 @@
 <template lang="pug">
-div.container
-  div.flex
-    div.logo-wrapper
-      div.mark
-        img(src='../assets/logo.svg')
-      div.name Yamilah Atallah
+div.content-wrapper
+  div.flex.container
+    router-link(to='/')
+      div.logo-wrapper
+        div.mark
+          img(src='../assets/logo.svg')
+        div.name Yamilah Atallah
     nav
       ul
-        li about
-        li cv
+        router-link(to='/about')
+          li.about about
+        a(href='http://bit.ly/ya-resume', target='_blank')
+          li cv
 </template>
 
 <script>
@@ -18,14 +21,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.content-wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+a {
+  color: black;
+}
 
 .flex {
   display: flex;
   align-items: center;
-  position: fixed;
   justify-content: space-between;
   padding-top: 60px;
-  z-index: 3;
 }
 
 .logo-wrapper {
@@ -34,7 +44,7 @@ export default {
 }
 
 .name, li {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 2.6px;
   text-transform: uppercase;
@@ -52,8 +62,7 @@ ul {
   display: flex;
 }
 
-li:first-of-type {
-  padding-right: 80px;
-  padding-left: 80px;
+.about {
+  margin-right: 80px;
 }
 </style>
