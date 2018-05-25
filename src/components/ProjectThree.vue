@@ -13,7 +13,7 @@ ProjectBackground(img='chillvibe_bg').project-bg
         p.project-year 2017
         div.date-line
         div.description-wrapper
-          p.project-description Lorem ipsum dolor sit amet asdjflkdshlkdahs asdkfd
+          p.project-description A design of a streaming platform made just for relaxing sounds.
           router-link(to='chillvibe')
             div.link-wrapper
               p.link-view View project

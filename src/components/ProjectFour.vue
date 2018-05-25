@@ -6,7 +6,7 @@ div.container-fluid.content-wrapper
       p.project-year 2017
       div.date-line
       h2 The Game of UX
-      p.project-description Lorem ipsum dolor sit amet whatever whatever whatever whatever
+      p.project-description A commissioned illustrated poster for a talk at the UXPA 2017 in Massachusetts.
       router-link(to='uxpa')
         div.link-wrapper
           p.link-view View project

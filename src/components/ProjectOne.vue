@@ -5,7 +5,7 @@ ProjectBackground(img='scaife_line').project-bg.content-wrapper
       p.project-year 2018
       div.date-line
       h1.project-name Scaife Digital Library
-      p.project-description Lorem ipsum dolor sit amet whatever whatever whatever whatever
+      p.project-description A commissioned design for an online learning platform of classic text and language.
       router-link(to='scaife')
         div.link-wrapper
           p.link-view View project

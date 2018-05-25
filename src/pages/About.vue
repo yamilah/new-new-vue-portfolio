@@ -3,20 +3,21 @@ div
   TopNav
   Contact
 
-  div.container-fluid
+  div.container
     div.row
       div.col-lg-7.img-wrapper
         img(src='../assets/about-portrait.png').intro-img
-      div.col-lg-3.offset-lg-1
+      div.col-lg-4.offset-lg-1
         h1.header Hello,
         p.paragraph
           | I'm Yamilah Atallah
-          span.pronounce-wrapper  (jah mee lah • ah tah lah)
+          span.pronounce-wrapper &nbsp;(jah mee lah • ah tah lah)&nbsp;
           | a designer &amp; web dev based in San Jose, CA. I have experience as both a consultant and as an in-house designer and developer. All of my work is always multi-platform and responsive. As a designer with development experience, I work with implementation in mind; as a designer with consulting experience, I optimize for concision within constraints. I strive for self-sufficiency, and to bring polish into everything I do.
     div.row.second-desc
-      p
-        .paragraph.col-lg-3.offset-lg-3 I've made products for many different users and industries: hospitality, online education, ecommerce, etc. My background is just as varied: originally a fine artist and architect by training, eventually focusing into graphic design (MassArt 2015, BFA). From my multidisciplinary background, I learned the value of breadth; a generalist above all else, I offer my skills in visual design, user experience design, branding, testing, web development, project management, and client relationship management.
-        h2.col-lg-6 I strive for self-sufficiency, and to bring polish into everything I do.
+      div
+        span.quote-wrapper.col-lg-6 I strive for self-sufficiency, and to bring polish into everything I do.
+        p.paragraph.col-lg-3.offset-lg-3 I've made products for many different users and industries: hospitality, online education, ecommerce, etc. My background is just as varied: originally a fine artist and architect by training, eventually focusing into graphic design (MassArt 2015, BFA).
+        p.paragraph.offset-lg-3.col-lg-6.second-p From my multidisciplinary background, I learned the value of breadth; a generalist above all else, I offer my skills in visual design, user experience design, branding, testing, web development, project management, and client relationship management.
 
   div.overview
     div.container
@@ -56,6 +57,7 @@ h3 {
 
 .img-wrapper {
   background-color: #ff1100;
+  height: 100%;
 }
 
 .intro-img {
@@ -66,24 +68,26 @@ h1 {
   font-size: 123px;
   font-weight: 800;
   margin-bottom: 60px;
-  padding-top: 350px;
+  padding-top: 220px;
 }
 
 .pronounce-wrapper {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1.6px;
 }
 
-h2 {
+.quote-wrapper {
   font-weight: 800;
   font-size: 54px;
   float: right;
+  line-height: 1.5;
 }
 
 .second-desc {
   margin-top: 30px;
+  margin-bottom: 200px;
 }
 
 .paragraph {

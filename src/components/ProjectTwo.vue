@@ -11,7 +11,7 @@ ProjectBackground(img='hnc_line').project-bg
       div.date-line
       div.project-wrapper.col-lg-6
         h1.project-name Hart Nautical Collection
-        p.project-description Lorem ipsum dolor sit amet asdjflkdshlkdahs asdkfd
+        p.project-description A commissioned design for a maritime museum in Cambridge, MA.
       router-link(to='hnc')
         div.link-wrapper
           p.link-view View project
