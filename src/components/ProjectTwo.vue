@@ -1,21 +1,23 @@
 <template lang="pug">
 ProjectBackground(img='hnc_line').project-bg
   div.container.full-view
-    div.image-wrapper.offset-lg-2
-      img(src='../assets/hnc-red.png').hnc-1
-      img(src='../assets/hnc-main.png').hnc-2
-      img(src='../assets/hnc-mobile.png').hnc-3
+    div.image-wrapper
+      img(src='../assets/hnc-red.png').hnc-1.offset-lg-2.col-lg-2.offset-md-2.col-md-3.offset-sm-1.col-sm-4.offset-xs-1.col-xs-1
+      img(src='../assets/hnc-main.png').hnc-2.offset-lg-3.col-lg-8.offset-md-3.col-md-8.offset-sm-2.col-sm-9
+      img(src='../assets/hnc-mobile.png').hnc-3.offset-lg-9.col-lg-3.offset-md-9.col-md-3.offset-sm-8.col-sm-4
 
-    div.project-info.col-lg-12.offset-lg-1
-      p.project-year 2018
-      div.date-line
-      div.project-wrapper.col-lg-6
-        h1.project-name Hart Nautical Collection
-        p.project-description A commissioned design for a maritime museum in Cambridge, MA.
-      router-link(to='hnc')
-        div.link-wrapper
-          p.link-view View project
-          p.anticon.icon-arrowright
+    div.row
+      div.project-info.col.offset-lg-1.offset-md-1
+        div.date-wrapper
+          p.project-year 2018
+          div.date-line
+        div.project-wrapper
+          h1.project-name.col-lg-4.col-md-5 Hart Nautical Collection
+          p.project-description.col-lg-3.col-md-5.offset-md-1.offset-lg-1 A commissioned design for a maritime museum in Cambridge, MA.
+        router-link(to='hnc')
+          div.link-wrapper
+            p.link-view View project
+            p.anticon.icon-arrowright
 </template>
 
 <script>
@@ -28,8 +30,63 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (min-width: 576px) {
+  .project-bg {
+    background-size: 170vw;
+  }
+
+  .hnc-2 {
+    top: 50px;
+  }
+
+  .hnc-3 {
+    top: 160px;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-bg {
+    background-size: 170vw;
+  }
+
+  .hnc-2 {
+    top: 50px;
+  }
+
+  .hnc-3 {
+    top: 160px;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-bg {
+    background-size: 100vw;
+  }
+
+  .hnc-2 {
+    top: 30px;
+  }
+
+  .hnc-3 {
+    top: 240px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-bg {
+    background-size: 100vw;
+  }
+
+  .hnc-2 {
+    top: 30px;
+  }
+
+  .hnc-3 {
+    top: 240px;
+  }
+}
+
 .project-bg {
-  background-size: 100vw;
   background-position: center center;
 }
 
@@ -53,24 +110,21 @@ export default {
 
 .hnc-1 {
   z-index: 2;
+  height: 100%;
 }
 
 .hnc-2 {
-  left: 95px;
-  top: 110px;
-
   border-radius: 20px;
   box-shadow: 0 75px 75px 0 rgba(0,0,0,0.10);
-}
-
-.hnc-3 {
-  top: 340px;
-  right: 45px;
 }
 
 .project-info {
   display: flex;
   flex-direction: column;
+}
+
+.date-wrapper {
+  padding-left: 15px;
 }
 
 .project-year {
@@ -109,8 +163,6 @@ export default {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.8;
-
-  padding-left: 80px;
   padding-bottom: 15px;
 
   align-self: flex-end;
@@ -121,6 +173,8 @@ export default {
   align-items: center;
 
   color: #FF1100;
+
+  padding-left: 15px;
 }
 
 .link-view {
