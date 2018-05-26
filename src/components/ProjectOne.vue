@@ -46,7 +46,7 @@ export default {
 
 @media (min-width: 576px) {
   .project-bg {
-    background-size: 100vw;
+    background-size: 260vw;
   }
 
   .mockups-wrapper {
@@ -56,7 +56,7 @@ export default {
 
 @media (min-width: 768px) {
   .project-bg {
-    background-size: 100vw;
+    background-size: 260vw;
   }
 
   .mockups-wrapper {
@@ -66,7 +66,7 @@ export default {
 
 @media (min-width: 992px) {
   .project-bg {
-    background-size: 100vw;
+    background-size: 200vw;
   }
 
   .mockups-wrapper {
@@ -76,7 +76,7 @@ export default {
 
 @media (min-width: 1200px) {
   .project-bg {
-    background-size: 100vw;
+    background-size: 150vw;
   }
 
   .mockups-wrapper {
