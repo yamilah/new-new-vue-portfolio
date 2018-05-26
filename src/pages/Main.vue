@@ -68,11 +68,84 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 575px) {
+  .intro-rotate {
+    width: 232px
+  }
+
+  .intro-p {
+    font-size: 19px;
+  }
+
+  .intro-wrapper {
+    background-size: 140%;
+    background-position: bottom left;
+  }
+}
+
+@media (min-width: 576px) {
+  .intro-rotate {
+    width: 232px
+  }
+
+  .intro-p {
+    font-size: 19px;
+  }
+
+  .intro-wrapper {
+    background-size: 120%;
+    background-position: bottom left;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro-rotate {
+    width: 272px
+  }
+
+  .intro-p {
+    font-size: 22px;
+  }
+
+  .intro-wrapper {
+    background-size: 90%;
+    background-position: bottom right;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro-rotate {
+    width: 272px
+  }
+
+  .intro-p {
+    font-size: 26px;
+  }
+
+  .intro-wrapper {
+    background-size: 70%;
+    background-position: bottom right;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro-rotate {
+    width: 272px
+  }
+
+  .intro-p {
+    font-size: 26px;
+  }
+
+  .intro-wrapper {
+    background-size: 70%;
+    background-position: bottom right;
+  }
+}
+
 .intro-wrapper {
   height: 100vh;
   background-color: #FF1100;
-  background-position: bottom right;
-  background-size: 70%;
 }
 
 .intro-flex {
@@ -85,14 +158,12 @@ export default {
   margin-top: 220px;
   transform: rotate(90deg);
   transform-origin: 50% 50%;
-  width: 272px
 }
 
 .intro-p {
   color: white;
   font-weight: 600;
   line-height: 1.7;
-  font-size: 26px;
 
   padding-bottom: 15px;
 }

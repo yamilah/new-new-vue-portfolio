@@ -1,7 +1,7 @@
 <template lang="pug">
 ProjectBackground(img='scaife_line').project-bg.content-wrapper
   div.container.full-view
-    div.project-info.col-lg-3.offset-lg-1
+    div.project-info.col-xs-3.col-sm-7.col-md-5.col-lg-3.offset-sm-2.offset-md-2.offset-lg-1
       p.project-year 2018
       div.date-line
       h1.project-name Scaife Digital Library
@@ -30,6 +30,59 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 575px) {
+  .project-bg {
+    background-size: 520vw;
+  }
+
+  .project-description {
+    max-width: 370px;
+  }
+
+  .mockups-wrapper {
+    right: -470px;
+  }
+}
+
+@media (min-width: 576px) {
+  .project-bg {
+    background-size: 100vw;
+  }
+
+  .mockups-wrapper {
+    right: -290px;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-bg {
+    background-size: 100vw;
+  }
+
+  .mockups-wrapper {
+    right: -290px;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-bg {
+    background-size: 100vw;
+  }
+
+  .mockups-wrapper {
+    right: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-bg {
+    background-size: 100vw;
+  }
+
+  .mockups-wrapper {
+    right: 280px;
+  }
+}
 
 .content-wrapper {
   position: relative;
@@ -38,7 +91,6 @@ export default {
 }
 
 .project-bg {
-  background-size: 100vw;
   background-position: center center;
   padding-top: 80px;
   overflow: hidden;
@@ -47,6 +99,7 @@ export default {
 .project-info {
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .project-year {
@@ -112,7 +165,6 @@ export default {
 .mockups-wrapper {
   position: absolute;
   top: -930px;
-  right: 280px;
 }
 
 .mockups {

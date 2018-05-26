@@ -13,29 +13,6 @@
 <script>
 export default {
   name: 'Contact',
-  methods: {
-    handleScroll (event) {
-      this.contactnav_dark = window.scrollY > 130;
-    }
-  },
-  created () {
-    window.addEventListener('scroll', this.handleScroll)
-    window.addEventListener('resize', this.handleScroll)
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll)
-    window.removeEventListener('resize', this.handleScroll)
-  },
-  data: function() {
-    return {
-      contactnav_dark: false
-    }
-  },
-  computed: {
-    navcolor: function() {
-      return this.contactnav_dark ? 'contactnav-dark' : ''
-    }
-  }
 }
 </script>
 
