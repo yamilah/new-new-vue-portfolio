@@ -83,7 +83,7 @@ export default {
   }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 767px) {
   .nav-wrapper {
     display: none;
   }

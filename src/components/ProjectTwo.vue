@@ -2,7 +2,7 @@
 ProjectBackground(img='hnc_line').project-bg
   div.container.full-view
     div.image-wrapper
-      img(src='../assets/hnc-red.png').hnc-1.offset-lg-2.col-lg-2.offset-md-2.col-md-3.offset-sm-1.col-sm-4.offset-xs-1.col-xs-1
+      img(src='../assets/hnc-red.png').hnc-1.offset-lg-2.col-lg-2.offset-md-2.col-md-3.offset-sm-1.col-sm-4
       img(src='../assets/hnc-main.png').hnc-2.offset-lg-3.col-lg-8.offset-md-3.col-md-8.offset-sm-2.col-sm-9
       img(src='../assets/hnc-mobile.png').hnc-3.offset-lg-9.col-lg-3.offset-md-9.col-md-3.offset-sm-8.col-sm-4
 
@@ -30,17 +30,52 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 575px) {
+  .project-bg {
+    background-size: 450vw;
+  }
+
+  .hnc-1,
+  .hnc-3 {
+    display: none;
+  }
+
+  .hnc-2 {
+  left: 0;
+  width: 80%;
+  top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  }
+
+  .project-wrapper {
+    display: block;
+  }
+}
+
 @media (min-width: 576px) {
   .project-bg {
     background-size: 280vw;
   }
 
+  .hnc-1,
+  .hnc-2,
+  .hnc-3 {
+    display: block;
+  }
+
   .hnc-2 {
     top: 50px;
+    align-self: auto;
   }
 
   .hnc-3 {
     top: 160px;
+  }
+
+  .project-wrapper {
+    display: flex;
   }
 }
 
@@ -49,12 +84,23 @@ export default {
     background-size: 170vw;
   }
 
+  .hnc-1,
+  .hnc-2,
+  .hnc-3 {
+    display: block;
+  }
+
   .hnc-2 {
     top: 50px;
+    align-self: auto;
   }
 
   .hnc-3 {
     top: 160px;
+  }
+
+  .project-wrapper {
+    display: flex;
   }
 }
 
@@ -63,12 +109,23 @@ export default {
     background-size: 100vw;
   }
 
+  .hnc-1,
+  .hnc-2,
+  .hnc-3 {
+    display: block;
+  }
+
   .hnc-2 {
     top: 30px;
+    align-self: auto;
   }
 
   .hnc-3 {
     top: 240px;
+  }
+
+  .project-wrapper {
+    display: flex;
   }
 }
 
@@ -77,12 +134,23 @@ export default {
     background-size: 100vw;
   }
 
+  .hnc-1,
+  .hnc-2,
+  .hnc-3 {
+    display: block;
+  }
+
   .hnc-2 {
     top: 30px;
+    align-self: auto;
   }
 
   .hnc-3 {
     top: 240px;
+  }
+
+  .project-wrapper {
+    display: flex;
   }
 }
 
@@ -153,7 +221,6 @@ export default {
 }
 
 .project-wrapper {
-  display: flex;
   padding: 0;
 }
 

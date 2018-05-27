@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 576px) {
+@media (max-width: 767px) {
   .contact-wrapper {
     display: none;
   }

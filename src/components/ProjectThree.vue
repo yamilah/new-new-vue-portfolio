@@ -30,6 +30,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 575px) {
+  .chillvibe-decor {
+    width: 20vw;
+  }
+
+  .chillvibe-1 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 46px;
+    margin-bottom: 50px;
+  }
+
+  .chillvibe-2,
+  .chillvibe-3 {
+    display: none;
+  }
+
+  .project-bg {
+    background-size: 260vw;
+  }
+
+  .date-line {
+    width: 90px;
+  }
+}
+
 @media (min-width: 576px) {
   .chillvibe-1 {
     border-radius: 29px;
@@ -41,6 +68,10 @@ export default {
 
   .project-bg {
     background-size: 150vw;
+  }
+
+  .date-line {
+    width: 360px;
   }
 }
 
@@ -54,7 +85,11 @@ export default {
   }
 
   .project-bg {
-    background-size: 100vw;
+    background-size: 130vw;
+  }
+
+  .date-line {
+    width: 360px;
   }
 }
 
@@ -70,6 +105,10 @@ export default {
   .project-bg {
     background-size: 100vw;
   }
+
+  .date-line {
+    width: 360px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -82,6 +121,10 @@ export default {
 
   .project-bg {
     background-size: 100vw;
+  }
+
+  .date-line {
+    width: 360px;
   }
 }
 
@@ -140,7 +183,6 @@ h1 {
 }
 
 .date-line {
-  width: 360px;
   height: 2px;
   background-color: black;
 
