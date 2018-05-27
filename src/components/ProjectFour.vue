@@ -1,7 +1,7 @@
 <template lang="pug">
 div.container-fluid.content-wrapper
   div.row
-    div.col-lg-3.offset-lg-3.info-wrapper
+    div.info-wrapper.offset-lg-3.col-lg-3.offset-sm-2.col-sm-5
       h1 uxpa
       p.project-year 2017
       div.date-line
@@ -12,7 +12,7 @@ div.container-fluid.content-wrapper
           p.link-view View project
           p.anticon.icon-arrowright
 
-    div.col
+    div.image-wrapper.col
       img(src='../assets/uxpa-poster-sm.svg')
 </template>
 
@@ -23,6 +23,51 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (min-width: 576px) {
+  .content-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .image-wrapper {
+    align-self: center;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 110px;
+  }
+
+  img {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 110px;
+  }
+
+  img {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 110px;
+  }
+
+  img {
+    margin-top: 80px;
+  }
+}
+
 .content-wrapper {
   background-color: #e7d45b;
 
@@ -41,7 +86,6 @@ h2 {
 
 h1 {
   text-transform: uppercase;
-  font-size: 110px;
   font-weight: 700;
 
   transform: rotate(90deg);
@@ -65,8 +109,6 @@ img {
   height: 100%;
   width: 230%;
   box-shadow: 0 45px 75px 0 rgba(0,0,0,0.2);
-
-  margin-top: 80px;
 }
 
 .project-description {

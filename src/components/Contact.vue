@@ -45,7 +45,7 @@ nav {
 
   align-items: flex-end;
   height: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
   z-index: 1;
 
   transition: color 0.3s ease;

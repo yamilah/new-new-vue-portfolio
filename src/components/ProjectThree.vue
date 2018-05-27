@@ -34,8 +34,13 @@ export default {
   .chillvibe-1 {
     border-radius: 29px;
   }
+
   .chillvibe-3 {
     top: -30px;
+  }
+
+  .project-bg {
+    background-size: 150vw;
   }
 }
 
@@ -43,8 +48,13 @@ export default {
   .chillvibe-1 {
     border-radius: 39px;
   }
+
   .chillvibe-3 {
     top: -180px;
+  }
+
+  .project-bg {
+    background-size: 100vw;
   }
 }
 
@@ -52,8 +62,13 @@ export default {
   .chillvibe-1 {
     border-radius: 49.25px;
   }
+
   .chillvibe-3 {
     top: -180px;
+  }
+
+  .project-bg {
+    background-size: 100vw;
   }
 }
 
@@ -64,10 +79,13 @@ export default {
   .chillvibe-3 {
     top: -180px;
   }
+
+  .project-bg {
+    background-size: 100vw;
+  }
 }
 
 .project-bg {
-  background-size: 100vw;
   background-position: bottom right;
   padding-top: 300px;
   overflow: hidden;
