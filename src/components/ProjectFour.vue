@@ -1,10 +1,11 @@
 <template lang="pug">
-div.container-fluid.content-wrapper
-  div.row
-    div.info-wrapper.row.col-lg-8.col-md-7.col-sm-7
-      div.header-wrapper.offset-lg-3.col-lg-2.offset-md-4.col-md-2.offset-sm-1.col-sm-2
+div.background-wrapper
+  div.container.content-wrapper
+    div.row
+      div.header-wrapper.offset-lg-1.col-lg-1.offset-md-1.col-md-1.offset-sm-0.col-sm-2
         h1 uxpa
-      div.detail-wrapper.offset-lg-0.col-lg-5.offset-md-0.col-md-6.offset-sm-1.col-sm-9
+
+      div.info-wrapper.col-lg-3.col-md-6.col-sm-8
         p.project-year 2017
         div.date-line
         h2 The Game of UX
@@ -14,8 +15,7 @@ div.container-fluid.content-wrapper
             p.link-view View project
             p.anticon.icon-arrowright
 
-    div.image-wrapper.col
-      img(src='../assets/uxpa-poster-sm.svg')
+      img(src='../assets/uxpa-poster-sm.svg').col-lg-6.offset-lg-1.col-md-12.col-sm-12
 </template>
 
 <script>
@@ -25,151 +25,86 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@media (max-width: 767px) {
+@media(max-width: 575px) {
   .header-wrapper {
     display: none;
   }
 
-  h2 {
-    font-weight: 600;
-  }
-}
-
-@media (max-width: 575px) {
-  .date-line {
-    height: 70px;
-  }
-
-  .detail-wrapper {
-    padding-bottom: 40px;
-    padding-top: 40px;
-  }
-}
-
-@media (min-width: 576px) {
-  .content-wrapper {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  h1 {
-    font-size: 50px;
-  }
-
-  .image-wrapper {
-    align-self: center;
-  }
-
-  img {
-    width: 230%;
-  }
-
-  .date-line {
-    height: 160px;
-  }
-}
-
-@media (min-width: 768px) {
-  .content-wrapper {
-    padding-top: 50px;
+  .info-wrapper {
     padding-bottom: 50px;
   }
 
-  h1 {
-    font-size: 110px;
-  }
-
-  img {
-    margin-top: 80px;
-    width: 230%;
-  }
-
-  .image-wrapper {
-    align-self: auto;
-  }
-
-  .date-line {
-    height: 250px;
-  }
-
-  .header-wrapper {
-    display: block;
-  }
-
-  h2 {
-    font-weight: 500;
-  }
-}
-
-@media (min-width: 992px) {
   .content-wrapper {
     padding-top: 50px;
-    padding-bottom: 50px;;
   }
 
-  h1 {
-    font-size: 110px;
-  }
-
-  img {
-    margin-top: 80px;
-    width: 280%;
-  }
-
-  .image-wrapper {
-    align-self: auto;
-  }
-
-  .date-line {
-    height: 250px;
-  }
-
-  .header-wrapper {
-    display: block;
-  }
-
-  h2 {
-    font-weight: 500;
+  img,
+  .info-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
-@media (min-width: 1200px) {
+@media(min-width: 576px) {
+  .info-wrapper {
+    padding-bottom: 80px;
+  }
+
   .content-wrapper {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  h1 {
-    font-size: 110px;
+    padding-top: 80px;
   }
 
   img {
-    margin-top: 80px;
-    width: 230%;
-  }
-
-  .image-wrapper {
-    align-self: auto;
-  }
-
-  .date-line {
-    height: 250px;
-  }
-
-  .header-wrapper {
-    display: block;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-.content-wrapper {
-  background-color: #e7d45b;
+@media(min-width: 768px) {
+  .info-wrapper {
+    padding-bottom: 80px;
+  }
 
+  .content-wrapper {
+    padding-top: 80px;
+  }
+
+  img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media(min-width: 992px) {
+  .info-wrapper {
+    padding-bottom: 150px;
+  }
+
+  .content-wrapper {
+    padding-top: 150px;
+  }
+
+  img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media(min-width: 1200px) {
+  .info-wrapper {
+    padding-bottom: 150px;
+  }
+
+  img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.background-wrapper {
+  background-color: #f9e662;
   margin-top: 150px;
   margin-bottom: 150px;
-}
-
-.info-wrapper {
-  align-items: center;
 }
 
 h1,
@@ -179,26 +114,39 @@ h2 {
 
 h1 {
   text-transform: uppercase;
-  font-weight: 700;
-
   transform: rotate(90deg);
-  transform-origin: 50% 50%;
+  font-size: 60px;
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.project-year {
+  margin-bottom: 60px;
+  margin-left: -3px;
+  width: 40px;
+
+  font-size: 12px;
+  letter-spacing: 4px;
+
+  transform: rotate(90deg);
+  transform-origin: 0 100%;
 }
 
 .date-line {
+  margin-bottom: 20px;
   width: 2px;
+  height: 94px;
   background-color: black;
-
-  margin-bottom: 30px;
 }
 
 img {
+  width: 100%;
   height: 100%;
-  box-shadow: 0 45px 75px 0 rgba(0,0,0,0.2);
+  align-self: flex-end;
+  box-shadow: 0 45px 75px 0 rgba(0,0,0,0.10);
 }
 
 .project-description {
@@ -206,7 +154,7 @@ img {
   font-size: 16px;
   line-height: 1.8;
 
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
@@ -228,17 +176,5 @@ img {
 
 .icon-arrow-right {
   font-size: 10px;
-}
-
-.project-year {
-  margin-bottom: 60px;
-  margin-left: -3px;
-  width: 40px;
-
-  font-size: 12px;
-  letter-spacing: 4px;
-
-  transform: rotate(90deg);
-  transform-origin: 0 100%;
 }
 </style>
