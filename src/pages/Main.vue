@@ -10,7 +10,7 @@
           p.intro-p San Jose-based designer &amp; dev
           div.intro-underline
 
-        nav(:class='navcolor')
+        nav(:class='navcolor').nav-wrapper
           ul
             li 01
             li 02
@@ -84,6 +84,10 @@ export default {
 }
 
 @media (min-width: 576px) {
+  .nav-wrapper {
+    display: none;
+  }
+
   .intro-rotate {
     width: 232px
   }
@@ -99,6 +103,10 @@ export default {
 }
 
 @media (min-width: 768px) {
+  .nav-wrapper {
+    display: flex;
+  }
+
   .intro-rotate {
     width: 272px
   }
@@ -114,6 +122,10 @@ export default {
 }
 
 @media (min-width: 992px) {
+  .nav-wrapper {
+    display: flex;
+  }
+
   .intro-rotate {
     width: 272px
   }
@@ -129,6 +141,10 @@ export default {
 }
 
 @media (min-width: 1200px) {
+  .nav-wrapper {
+    display: flex;
+  }
+
   .intro-rotate {
     width: 272px
   }

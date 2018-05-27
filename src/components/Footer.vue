@@ -2,16 +2,16 @@
 div.footer-wrapper
   div.container
     div.row
-      div.offset-lg-1.col-lg-4
+      div.offset-lg-1.col-lg-4.col-md-10.offset-md-2
         h1 Let's build together.
 
-      div.col-lg-3
+      div.offset-lg-0.col-lg-3.offset-md-2.col-md-6.col-sm-6
         h2 say hi
         div.line
         a(href='mailto:hello@yamilah.com')
           p hello@yamilah.com
 
-      div.col-lg-3
+      div.col-lg-3.col-md-4.col-sm-6
         h2 link up
         div.line
         a(href='https://www.linkedin.com/in/yamilah', target='_blank')
@@ -27,6 +27,51 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (min-width: 576px) {
+  h1 {
+    font-size: 50px;
+    padding-bottom: 60px;
+  }
+
+  p {
+    font-size: 18px;
+    word-wrap: break-word;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 51px;
+  }
+
+  p {
+    font-size: 24px;
+    word-wrap: break-word;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 24px;
+    word-wrap: break-word;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 24px;
+    word-wrap: break-word;
+  }
+}
+
 .footer-wrapper {
   height: 100vh;
   display: flex;
@@ -41,7 +86,6 @@ p {
 
 h1 {
   font-weight: 700;
-  font-size: 60px;
 }
 
 h2 {
@@ -51,7 +95,6 @@ h2 {
 
 p {
   color: #ff1100;
-  font-size: 24px;
   font-weight: 700;
 
   padding-bottom: 10px;

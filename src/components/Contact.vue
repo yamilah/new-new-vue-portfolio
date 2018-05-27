@@ -1,6 +1,6 @@
 <template lang="pug">
-  div.container
-    nav(:class='navcolor')
+  div.container.contact-wrapper
+    nav
       ul
         li.icon-wrapper
           a(href='mailto:hello@yamilah.com').icon.anticon.icon-mail
@@ -17,6 +17,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (min-width: 576px) {
+  .contact-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-wrapper {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-wrapper {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-wrapper {
+    display: block;
+  }
+}
+
 .icon {
   display: block;
   color: white;
