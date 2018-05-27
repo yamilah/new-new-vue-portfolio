@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 @media (min-width: 576px) {
   .project-bg {
-    background-size: 170vw;
+    background-size: 280vw;
   }
 
   .hnc-2 {
@@ -95,6 +95,12 @@ export default {
   position: relative;
 
   top: 80px;
+}
+
+.hnc-1,
+.hnc-2,
+.hnc-3 {
+  padding: 0;
 }
 
 .hnc-1,

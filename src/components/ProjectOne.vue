@@ -1,7 +1,7 @@
 <template lang="pug">
 ProjectBackground(img='scaife_line').project-bg.content-wrapper
   div.container.full-view
-    div.project-info.col-xs-3.col-sm-7.col-md-5.col-lg-3.offset-sm-2.offset-md-2.offset-lg-1
+    div.project-info.col-sm-7.col-md-5.col-lg-3.offset-sm-2.offset-md-2.offset-lg-1
       p.project-year 2018
       div.date-line
       h1.project-name Scaife Digital Library
@@ -46,11 +46,11 @@ export default {
 
 @media (min-width: 576px) {
   .project-bg {
-    background-size: 260vw;
+    background-size: 340vw;
   }
 
   .mockups-wrapper {
-    right: -290px;
+    right: -370px;
   }
 }
 

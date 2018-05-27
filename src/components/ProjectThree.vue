@@ -2,10 +2,10 @@
 ProjectBackground(img='chillvibe_bg').project-bg
   div.container
     img(src='../assets/chillvibe-decor.svg').chillvibe-decor
-    div.offset-lg-2.image-wrapper
-        img(src='../assets/chillvibe-phone.png').chillvibe-1
-        img(src='../assets/chillvibe-player.png').chillvibe-2
-        img(src='../assets/chillvibe-timer.png').chillvibe-3
+    div.image-wrapper
+        img(src='../assets/chillvibe-phone.png').chillvibe-1.offset-lg-2.col-lg-4.offset-md-1.col-md-5.offset-sm-1.col-sm-5
+        img(src='../assets/chillvibe-player.png').chillvibe-2.offset-lg-0.col-lg-3.col-md-4.col-sm-3
+        img(src='../assets/chillvibe-timer.png').chillvibe-3.offset-lg-7.col-lg-3.offset-md-7.col-md-4.offset-sm-7.col-sm-3
 
     div.project-info.col-lg-8.offset-lg-3
       h1 chillvi.be
@@ -30,6 +30,42 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (min-width: 576px) {
+  .chillvibe-1 {
+    border-radius: 29px;
+  }
+  .chillvibe-3 {
+    top: -30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .chillvibe-1 {
+    border-radius: 39px;
+  }
+  .chillvibe-3 {
+    top: -180px;
+  }
+}
+
+@media (min-width: 992px) {
+  .chillvibe-1 {
+    border-radius: 49.25px;
+  }
+  .chillvibe-3 {
+    top: -180px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .chillvibe-1 {
+    border-radius: 49.25px;
+  }
+  .chillvibe-3 {
+    top: -180px;
+  }
+}
+
 .project-bg {
   background-size: 100vw;
   background-position: bottom right;
@@ -46,10 +82,11 @@ export default {
 .chillvibe-2,
 .chillvibe-3 {
   box-shadow: 0 52px 65px 0 rgba(0,0,0,0.10);
+  padding: 0;
 }
 
 .chillvibe-1 {
-  border-radius: 49.25px;
+  height: 100%;
 }
 
 .chillvibe-2 {
@@ -60,8 +97,7 @@ export default {
 
 .chillvibe-3 {
   position: absolute;
-  top: -180px;
-  right: 160px;
+  border-radius: 9px;
 }
 
 .project-info {
