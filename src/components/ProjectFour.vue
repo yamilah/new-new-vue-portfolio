@@ -1,16 +1,18 @@
 <template lang="pug">
 div.container-fluid.content-wrapper
   div.row
-    div.info-wrapper.offset-lg-3.col-lg-3.offset-sm-2.col-sm-5
-      h1 uxpa
-      p.project-year 2017
-      div.date-line
-      h2 The Game of UX
-      p.project-description A commissioned illustrated poster for a talk at the UXPA 2017 in Massachusetts.
-      router-link(to='uxpa')
-        div.link-wrapper
-          p.link-view View project
-          p.anticon.icon-arrowright
+    div.info-wrapper.row.col-lg-8.col-md-7.col-sm-7
+      div.header-wrapper.offset-lg-3.col-lg-2.offset-md-4.col-md-2.offset-sm-1.col-sm-2
+        h1 uxpa
+      div.detail-wrapper.offset-lg-0.col-lg-5.offset-md-0.col-md-6.offset-sm-0.col-sm-9
+        p.project-year 2017
+        div.date-line
+        h2 The Game of UX
+        p.project-description A commissioned illustrated poster for a talk at the UXPA 2017 in Massachusetts.
+        router-link(to='uxpa')
+          div.link-wrapper
+            p.link-view View project
+            p.anticon.icon-arrowright
 
     div.image-wrapper.col
       img(src='../assets/uxpa-poster-sm.svg')
@@ -36,35 +38,85 @@ export default {
   .image-wrapper {
     align-self: center;
   }
+
+  img {
+    width: 230%;
+  }
+
+  .date-line {
+    height: 160px;
+  }
 }
 
 @media (min-width: 768px) {
+  .content-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   h1 {
     font-size: 110px;
   }
 
   img {
     margin-top: 80px;
+    width: 230%;
+  }
+
+  .image-wrapper {
+    align-self: auto;
+  }
+
+  .date-line {
+    height: 250px;
   }
 }
 
 @media (min-width: 992px) {
+  .content-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;;
+  }
+
   h1 {
     font-size: 110px;
   }
 
   img {
     margin-top: 80px;
+    width: 280%;
+  }
+
+  .image-wrapper {
+    align-self: auto;
+  }
+
+  .date-line {
+    height: 250px;
   }
 }
 
 @media (min-width: 1200px) {
+  .content-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   h1 {
     font-size: 110px;
   }
 
   img {
     margin-top: 80px;
+    width: 230%;
+  }
+
+  .image-wrapper {
+    align-self: auto;
+  }
+
+  .date-line {
+    height: 250px;
   }
 }
 
@@ -76,7 +128,7 @@ export default {
 }
 
 .info-wrapper {
-  align-self: center;
+  align-items: center;
 }
 
 h1,
@@ -89,7 +141,7 @@ h1 {
   font-weight: 700;
 
   transform: rotate(90deg);
-  transform-origin: -56% 139%;
+  transform-origin: 50% 50%;
 }
 
 h2 {
@@ -99,7 +151,6 @@ h2 {
 
 .date-line {
   width: 2px;
-  height: 250px;
   background-color: black;
 
   margin-bottom: 30px;
@@ -107,7 +158,6 @@ h2 {
 
 img {
   height: 100%;
-  width: 230%;
   box-shadow: 0 45px 75px 0 rgba(0,0,0,0.2);
 }
 
