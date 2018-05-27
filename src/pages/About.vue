@@ -7,7 +7,7 @@ div
     div.row
       div.col-lg-7.img-wrapper
         img(src='../assets/about-portrait.png').intro-img
-      div.col-lg-4.offset-lg-1
+      div.col-lg-4.offset-lg-1.offset-md-1.col-md-10
         h1.header Hello,
         p.paragraph
           | I'm Yamilah Atallah
@@ -15,9 +15,9 @@ div
           | a designer &amp; web dev based in San Jose, CA. I have experience as both a consultant and as an in-house designer and developer. All of my work is always multi-platform and responsive. As a designer with development experience, I work with implementation in mind; as a designer with consulting experience, I optimize for concision within constraints. I strive for self-sufficiency, and to bring polish into everything I do.
     div.row.second-desc
       div
-        span.quote-wrapper.col-lg-6 I strive for self-sufficiency, and to bring polish into everything I do.
-        p.paragraph.col-lg-3.offset-lg-3 I've made products for many different users and industries: hospitality, online education, ecommerce, etc. My background is just as varied: originally a fine artist and architect by training, eventually focusing into graphic design (MassArt 2015, BFA).
-        p.paragraph.offset-lg-3.col-lg-6.second-p From my multidisciplinary background, I learned the value of breadth; a generalist above all else, I offer my skills in visual design, user experience design, branding, testing, web development, project management, and client relationship management.
+        span.quote-wrapper.offset-lg-0.col-lg-6.offset-md-0.col-md-6.col-sm-6 I strive for self-sufficiency, and to bring polish into everything I do.
+        p.paragraph.col-lg-3.offset-lg-3.offset-md-1.col-md-10 I've made products for many different users and industries: hospitality, online education, ecommerce, etc. My background is just as varied: originally a fine artist and architect by training, eventually focusing into graphic design (MassArt 2015, BFA).
+        p.paragraph.offset-lg-3.col-lg-6.second-p.offset-md-1.col-md-10 From my multidisciplinary background, I learned the value of breadth; a generalist above all else, I offer my skills in visual design, user experience design, branding, testing, web development, project management, and client relationship management.
 
   div.overview
     div.container
@@ -49,6 +49,146 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 575px) {
+  h1 {
+    padding-top: 100px;
+  }
+
+  .quote-wrapper {
+    font-size: 44px;
+  }
+
+  .second-desc {
+    margin-bottom: 100px;
+  }
+
+  .offer {
+    text-align: center;
+  }
+
+  .second {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .subline {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 576px) {
+  h1 {
+    padding-top: 150px;
+  }
+
+  .offer {
+    text-align: center;
+  }
+
+  .second {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .quote-wrapper {
+    font-size: 34px;
+  }
+
+  .second-desc {
+    margin-bottom: 150px;
+  }
+
+  .subline {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    padding-top: 150px;
+  }
+
+  .offer {
+    text-align: left;
+  }
+
+  .quote-wrapper {
+    font-size: 42px;
+  }
+
+  .second-desc {
+    margin-bottom: 150px;
+  }
+
+  .first,
+  .second {
+    padding-bottom: 60px;
+  }
+
+  .second {
+    padding-top: 0;
+  }
+
+  .subline {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    padding-top: 150px;
+  }
+
+  .offer {
+    text-align: left;
+  }
+
+  .quote-wrapper {
+    font-size: 54px;
+  }
+
+  .second {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .second-desc {
+    margin-bottom: 200px;
+  }
+
+  .subline {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    padding-bottom: 30px;
+    padding-top: 220px;
+  }
+
+  .offer {
+    text-align: left;
+  }
+
+  .quote-wrapper {
+    font-size: 54px;
+  }
+
+  .second {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .second-desc {
+    margin-bottom: 200px;
+  }
+
+  .subline {
+    margin-top: 15px;
+  }
+}
+
 h1,
 h2,
 h3 {
@@ -65,10 +205,9 @@ h3 {
 }
 
 h1 {
+  padding-bottom: 30px;
   font-size: 123px;
   font-weight: 800;
-  margin-bottom: 60px;
-  padding-top: 220px;
 }
 
 .pronounce-wrapper {
@@ -79,15 +218,18 @@ h1 {
 }
 
 .quote-wrapper {
+  padding-bottom: 30px;
   font-weight: 800;
-  font-size: 54px;
   float: right;
   line-height: 1.5;
 }
 
+.second-p {
+  padding-top: 30px;
+}
+
 .second-desc {
   margin-top: 30px;
-  margin-bottom: 200px;
 }
 
 .paragraph {
@@ -130,7 +272,6 @@ h3 {
 .subline {
   font-weight: 300;
   line-height: 28px;
-  margin-top: 15px;
   font-size: 16px;
 }
 </style>

@@ -68,7 +68,6 @@ export default {
 
   p {
     font-size: 18px;
-    word-wrap: break-word;
   }
 
   .line {
@@ -84,7 +83,6 @@ export default {
 
   p {
     font-size: 24px;
-    word-wrap: break-word;
   }
 
   .line {
@@ -100,7 +98,6 @@ export default {
 
   p {
     font-size: 24px;
-    word-wrap: break-word;
   }
 
   .line {
@@ -115,8 +112,7 @@ export default {
   }
 
   p {
-    font-size: 24px;
-    word-wrap: break-word;
+    font-size: 23px;
   }
 
   .line {
@@ -149,6 +145,7 @@ h2 {
 p {
   color: #ff1100;
   font-weight: 700;
+  word-wrap: break-word;
 
   padding-bottom: 10px;
 }
