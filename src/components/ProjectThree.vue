@@ -203,7 +203,7 @@ h1 {
   font-size: 16px;
   line-height: 1.8;
 
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   padding-top: 40px;
 }
 

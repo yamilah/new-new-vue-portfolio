@@ -4,7 +4,7 @@ div.container-fluid.content-wrapper
     div.info-wrapper.row.col-lg-8.col-md-7.col-sm-7
       div.header-wrapper.offset-lg-3.col-lg-2.offset-md-4.col-md-2.offset-sm-1.col-sm-2
         h1 uxpa
-      div.detail-wrapper.offset-lg-0.col-lg-5.offset-md-0.col-md-6.offset-sm-0.col-sm-9
+      div.detail-wrapper.offset-lg-0.col-lg-5.offset-md-0.col-md-6.offset-sm-1.col-sm-9
         p.project-year 2017
         div.date-line
         h2 The Game of UX
@@ -25,6 +25,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 767px) {
+  .header-wrapper {
+    display: none;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 575px) {
+  .date-line {
+    height: 70px;
+  }
+
+  .detail-wrapper {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
+
 @media (min-width: 576px) {
   .content-wrapper {
     padding-top: 100px;
@@ -70,6 +91,14 @@ export default {
   .date-line {
     height: 250px;
   }
+
+  .header-wrapper {
+    display: block;
+  }
+
+  h2 {
+    font-weight: 500;
+  }
 }
 
 @media (min-width: 992px) {
@@ -94,6 +123,14 @@ export default {
   .date-line {
     height: 250px;
   }
+
+  .header-wrapper {
+    display: block;
+  }
+
+  h2 {
+    font-weight: 500;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -117,6 +154,10 @@ export default {
 
   .date-line {
     height: 250px;
+  }
+
+  .header-wrapper {
+    display: block;
   }
 }
 
@@ -146,7 +187,6 @@ h1 {
 
 h2 {
   font-size: 34px;
-  font-weight: 500;
 }
 
 .date-line {
@@ -167,7 +207,7 @@ img {
   line-height: 1.8;
 
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .link-wrapper {
