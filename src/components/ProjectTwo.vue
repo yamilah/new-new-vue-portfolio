@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 @media (max-width: 575px) {
   .project-bg {
-    background-size: 450vw;
+    background-size: 420vw;
   }
 
   .hnc-1,
