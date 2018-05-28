@@ -6,37 +6,41 @@
     img(src='../assets/hnc-intro.png').full-width
     div.container.title-wrapper
       div.row.title-content
-        h1 HNC
-        h2 Hart Nautical Collection
+        div.header-first.offset-lg-1.col-lg-2.offset-md-1.col-md-2.col-sm-3
+          h1 HNC
+        div.header-second.col-lg-9.col-md-9.col-sm-9
+          h2 Hart Nautical Collection
       div.row
-        div.col-lg-3.offset-lg-1.more-info
+        div.more-info.col-lg-3.offset-lg-1.offset-md-1.col-md-3.col-sm-4
           p User Experience, Wireframing
           p Sketch, Invision, Freehand, Bootstrap
           p Responsive webapp
-        div.col-lg-4.paragraph
+        div.paragraph.col-lg-4.col-md-4.col-sm-8
           p I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
-          p I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
-        p.col-lg-4.paragraph I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
+          p.intro-second-p I was commissioned for some web design work on the Scaife Digital Library (SDL).
+        p.paragraph.col-lg-4.col-md-4 I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
 
     img(src='../assets/hnc-1.jpg').full-width
 
     div.container.process-wrapper
       div.row
-        div.col-lg-2.offset-lg-2
+        div.col-lg-1.offset-lg-2.offset-md-1.col-md-2.col-sm-2
           h4 Process
 
-        div.col-lg-4
+        div.col-lg-4.col-md-4.col-sm-5
           h3 Some sort of quote will go here etc etc etc I don't know.
           p.paragraph I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
 
-        p.col-lg-4.paragraph I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
+        p.paragraph.more-process.col-lg-4.col-md-4.col-sm-5 I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
 
-    div.last-wrapper.container-fluid
-      div.row.justify-content-center.gif-wrapper
-        img(src='../assets/hnc-lesson-create.gif').gif-lesson
-        div.col-lg-4.offset-lg-2
-          p.quote “
-          p.pullquote As a professor, I need to be able to create and share lesson plans on the fly.
+    div.gif-wrapper
+      div.container
+        div.row.gif-row
+          div.gif-container.offset-lg-2.col-lg-4.offset-md-1.col-md-4.offset-sm-3.col-sm-6
+            img(src='../assets/hnc-lesson-create.gif').gif-lesson
+          div.quote-wrapper.offset-lg-1.col-lg-5.offset-md-1.col-md-6.offset-sm-1.col-sm-10
+            p.quote “
+            p.pullquote As a professor, I need to be able to create and share lesson plans on the fly.
 
     Footer
 </template>
@@ -53,10 +57,345 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 575px) {
+  h1 {
+    font-size: 80px;
+    transform: none;
+  }
 
-.title-wrapper {
-  padding-top: 410px;
-  padding-bottom: 170px;
+  h2 {
+    font-size: 40px;
+  }
+
+  .title-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .more-info {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+    padding-top: 30px;
+  }
+
+  h4 {
+    font-size: 60px;
+  }
+
+  .process-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .intro-second-p {
+    padding-bottom: 15px;
+  }
+
+  .gif-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .gif-lesson {
+    width: 40%;
+    border-radius: 20px;
+  }
+
+  .pullquote {
+    font-size: 30px;
+  }
+
+  .gif-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .more-process {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  h1 {
+    transform: rotate(-90deg);
+    font-size: 110px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .more-info {
+    margin-bottom: 0;
+  }
+
+  .intro-second-p {
+    padding-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 24px;
+    padding-top: 0;
+  }
+
+  h4 {
+    transform: rotate(90deg);
+    font-size: 60px;
+  }
+
+  .gif-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .gif-container {
+    padding-bottom: 100px;
+  }
+
+  .gif-lesson {
+    width: 100%;
+    border-radius: 35px;
+  }
+
+  .more-info {
+    font-size: 16px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+
+  .title-wrapper {
+    padding-top: 250px;
+    padding-bottom: 100px;
+  }
+
+  .process-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .pullquote {
+    font-size: 40px;
+  }
+
+  .more-process {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    transform: rotate(-90deg);
+    font-size: 110px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .more-info {
+    margin-bottom: 0;
+  }
+
+  .intro-second-p {
+    padding-bottom: 0;
+  }
+
+  h3 {
+    font-size: 30px;
+    padding-top: 0;
+  }
+
+  h4 {
+    transform: rotate(90deg);
+    font-size: 80px;
+  }
+
+  .gif-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .gif-container {
+    padding-bottom: 0;
+  }
+
+  .gif-lesson {
+    width: 100%;
+    border-radius: 35px;
+  }
+
+  .more-info {
+    font-size: 16px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+
+  .title-wrapper {
+    padding-top: 250px;
+    padding-bottom: 100px;
+  }
+
+  .process-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .pullquote {
+    font-size: 40px;
+  }
+
+  .more-process {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    transform: rotate(-90deg);
+    font-size: 170px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .more-info {
+    margin-bottom: 0;
+  }
+
+  .intro-second-p {
+    padding-bottom: 0;
+  }
+
+  h3 {
+    font-size: 40px;
+    padding-top: 0;
+  }
+
+  h4 {
+    transform: rotate(90deg);
+    font-size: 60px;
+  }
+
+  .gif-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .gif-container {
+    padding-bottom: 0;
+  }
+
+  .gif-lesson {
+    width: 100%;
+    border-radius: 35px;
+  }
+
+  .more-info {
+    font-size: 20px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+
+  .title-wrapper {
+    padding-top: 410px;
+    padding-bottom: 170px;
+  }
+
+  .process-wrapper {
+    padding-top: 170px;
+    padding-bottom: 170px;
+  }
+
+  .pullquote {
+    font-size: 45px;
+  }
+
+  .more-process {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    transform: rotate(-90deg);
+    font-size: 170px;
+  }
+
+  .more-info {
+    margin-bottom: 0;
+  }
+
+  .intro-second-p {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 40px;
+    padding-top: 0;
+  }
+
+  h4 {
+    transform: rotate(90deg);
+    font-size: 70px;
+  }
+
+  .gif-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .gif-container {
+    padding-bottom: 0;
+  }
+
+  .gif-lesson {
+    width: 100%;
+    border-radius: 49px;
+  }
+
+  .more-info {
+    font-size: 20px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+
+  .title-wrapper {
+    padding-top: 410px;
+    padding-bottom: 170px;
+  }
+
+  .process-wrapper {
+    padding-top: 170px;
+    padding-bottom: 170px;
+  }
+
+  .pullquote {
+    font-size: 50px;
+  }
+
+  .more-process {
+    padding-top: 0;
+  }
+}
+
+.full-width {
+  width: 100vw;
 }
 
 .title-content {
@@ -77,17 +416,10 @@ h2 {
 }
 
 h1 {
-  font-size: 170px;
-  transform: rotate(-90deg);
-  transform-origin: 43% -2%;
-}
-
-h2 {
-  font-size: 50px;
+  transform-origin: 50% 50%;
 }
 
 .more-info {
-  font-size: 20px;
   font-weight: 600;
   line-height: 1.4;
 
@@ -105,56 +437,52 @@ h2 {
   border-bottom: 2px solid black;
 }
 
-.process-wrapper {
-  padding-top: 170px;
-  padding-bottom: 170px;
+.intro-second-p {
+  padding-top: 15px;
 }
 
 h3 {
+  line-height: 1.4;
   padding-bottom: 30px;
-  font-size: 40px;
 }
 
 h4 {
   font-weight: 700;
-  font-size: 80px;
 
-  transform: rotate(90deg);
-  transform-origin: 30% 50%;
+  transform-origin: 50% 50%;
 }
 
 .paragraph {
-  font-size: 18px;
   font-weight: 200;
   line-height: 1.9;
 }
 
-.last-wrapper {
-  padding: 80px;
-  background-color: #ff1100
+.gif-wrapper {
+  background-color: #ff1100;
 }
 
-.gif-wrapper {
+.gif-row {
   align-items: center;
 }
 
 .gif-lesson {
-  border-radius: 35px;
+  height: auto;
   height: 100%;
   box-shadow: 0 52px 55px 0 rgba(0,0,0,0.20);
+}
+
+.quote-wrapper {
+  display: flex;
 }
 
 .quote {
   font-family: 'Passion One', cursive;
   color: white;
   font-size: 160px;
-  position: absolute;
-  top: -80px;
-  left: -60px;
 }
 
 .pullquote {
-  font-size: 50px;
+  padding-top: 80px;
   font-weight: 800;
 }
 </style>
