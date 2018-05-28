@@ -7,14 +7,14 @@ div
 
   div.container.about-wrapper
     div.offset-lg-3.offset-md-1
-      h1 uxpa, 16
+      h1 uxpa, 17
       div.row.offset-lg-1.offset-md-1
         div.col-lg-6.col-md-6.col-sm-7
           div.more-info
             p Illustration, Poster Design
             p Illustrator, Sketch, InDesign
-          p.paragraph.first-p I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
-        p.paragraph.col-lg-6.col-md-6.col-sm-5 I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
+          p.paragraph.first-p This was a commission by Intralinks. I was asked to design a poster for Kevin Markgren's presentation at UXPA 2017 (Boston), titled: "The Game of UX." Chatting with Kevin, we thought for a while what visual aide would best convey what his goals were, so we sought to really define them.
+        p.paragraph.col-lg-6.col-md-6.col-sm-5 He wanted to discuss where being a product designer can take you (e.g., related industries, specialisations, etc.). I couldn't think of a better way but to show this but to illustrate it. Not intended as an actual boardgame, I borrowed the boardgame motif from "Candyland," a classic children's game in USA. Something about it being to goofy and light hearted really worked for me: product design is, after all, very exciting!
 
   img(src='../assets/uxpa-poster-framed.jpg').detail
 

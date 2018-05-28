@@ -9,13 +9,13 @@
       div.row
         h1.col-lg-5.offset-lg-3.offset-md-1.col-md-5 chillvi.be
         div.col-lg-4.offset-lg-4.offset-md-2.col-md-5
-          p.paragraph I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
+          p.paragraph Chillvibe was a fun idea that occurred to me one day upon asking myself a question: in today's world of nonstop digital access, what does relaxation really look like? It's not easy to step away from our phones. For the majority of us, our devices are tethered to us, such that we can't even imagine leaving home without them!
           div.more-info
             p User Experience, Visual Design
             p Sketch, Invision
         div.col-lg-4.paragraph-wrapper.col-md-5
-          p.paragraph.paragraph-up I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
-          p.paragraph I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age.
+          p.paragraph.paragraph-up I decided what I wanted to see was an app to help me reprogram how I think of my device: when I hear a ding, I immediately get anxiety ("what will that notification be?" I ask).
+          p.paragraph I realized I needed some chill. With relaxing purples and soft pinks, rounded typographic elements, and images of landscapes, I sought out to make a mixer just for relaxing sounds: make it for yourself, or publish them for others to vibe to.
 
     img(src='../assets/chillvibe-1.jpg').full-width
 

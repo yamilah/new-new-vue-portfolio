@@ -16,9 +16,9 @@
           p Sketch, Invision, Freehand, Bootstrap
           p Responsive webapp
         div.paragraph.col-lg-4.col-md-4.col-sm-8
-          p I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
-          p.intro-second-p I was commissioned for some web design work on the Scaife Digital Library (SDL).
-        p.paragraph.col-lg-4.col-md-4 I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
+          p This commissioned design was with Archimedes Digital's development team and their client, Jeffrey Ravel, with MIT. It was a 6-week long engagement, requiring initial direction around wireframes (XS-XL), visual designs, and some preliminary testing.
+          p.intro-second-p This design was for a responsive webapp, allowing prospective attendees (e.g., students, researchers, educators, etc.) the ability to easily check through the catalogue, and allow approved students access to pedagogical material based on the collection.
+        p.paragraph.col-lg-4.col-md-4 This is a maritime gallery based in Cambridge, MA, which concerns itself with all things maritime, and pertinent to Boston, MA. Surrounded by history, I sought to echo the historical motifs with refined and bold visuals.
 
     img(src='../assets/hnc-1.jpg').full-width
 
@@ -29,9 +29,9 @@
 
         div.col-lg-4.col-md-4.col-sm-5
           h3 Some sort of quote will go here etc etc etc I don't know.
-          p.paragraph I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
+          p.paragraph I started by consulting the client: we built out user stories abd discussed the stakeholders (educators, students, researchers, etc). Researchers may be archivists working with MIT to document maritime advancement in Boston, and students could be MIT students (or otherwise), so there was much ground to cover.
 
-        p.paragraph.more-process.col-lg-4.col-md-4.col-sm-5 I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
+        p.paragraph.more-process.col-lg-4.col-md-4.col-sm-5 The trick to this would be capturing the immense amount of data that existed about these archives, and predicting how the search ought to function based on researcher needs. All the planning was done with Invision Freehand, sometimes live with the client. Every week, I set up sprint goals advancing the march of the visuals, functionality, and testing. It ended with a testing session (scripted, moderated) with about 15 students.
 
     div.gif-wrapper
       div.container
