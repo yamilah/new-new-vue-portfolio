@@ -10,7 +10,7 @@ div.content-wrapper
       ul
         router-link(to='/about')
           li.about about
-        a(href='http://bit.ly/ya-resume', target='_blank')
+        a(href='http://bit.ly/atallah-cv', target='_blank')
           li cv
 </template>
 
