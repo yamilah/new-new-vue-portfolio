@@ -6,16 +6,15 @@ div
   ProjectBackground(img='uxpa').intro
 
   div.container.about-wrapper
-    div.offset-lg-3
-      div.header-wrapper
-        h1 uxpa, 16
-      div.row.offset-lg-1
-        div.col-lg
+    div.offset-lg-3.offset-md-1
+      h1 uxpa, 16
+      div.row.offset-lg-1.offset-md-1
+        div.col-lg-6.col-md-6.col-sm-7
           div.more-info
             p Illustration, Poster Design
             p Illustrator, Sketch, InDesign
-          p.paragraph I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
-        p.col-lg.paragraph I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
+          p.paragraph.first-p I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
+        p.paragraph.col-lg-6.col-md-6.col-sm-5 I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
 
   img(src='../assets/uxpa-poster-framed.jpg').detail
 
@@ -35,16 +34,89 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.about-wrapper {
-  margin-top: 170px;
-  margin-bottom: 170px;
+@media (max-width: 575px) {
+  .about-wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .intro {
+    background-size: 130vh;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  .first-p {
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .about-wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .intro {
+    background-size: 100vw;
+  }
+
+  h1 {
+    font-size: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .intro {
+    background-size: 100vw;
+  }
+
+  h1 {
+    font-size: 151px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-wrapper {
+    margin-top: 170px;
+    margin-bottom: 170px;
+  }
+
+  .intro {
+    background-size: 100vw;
+  }
+
+  h1 {
+    font-size: 167px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-wrapper {
+    margin-top: 170px;
+    margin-bottom: 170px;
+  }
+
+  .intro {
+    background-size: 100vw;
+  }
+
+  h1 {
+    font-size: 170px;
+  }
 }
 
 .intro {
   width: 100vw;
   height: 100vh;
 
-  background-size: 100%;
   background-position: center center;
 }
 
@@ -54,7 +126,6 @@ h2 {
 }
 
 h1 {
-  font-size: 170px;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -88,6 +159,6 @@ h2 {
 }
 
 .detail {
-  width: 100%;
+  width: 100vw;
 }
 </style>

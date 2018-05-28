@@ -7,13 +7,13 @@
 
     div.container.intro-wrapper
       div.row
-        h1.col-lg-5.offset-lg-3 chillvi.be
-        div.col-lg-4.offset-lg-4
+        h1.col-lg-5.offset-lg-3.offset-md-1.col-md-5 chillvi.be
+        div.col-lg-4.offset-lg-4.offset-md-2.col-md-5
           p.paragraph I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
           div.more-info
             p User Experience, Visual Design
             p Sketch, Invision
-        div.col-lg-4.paragraph-wrapper
+        div.col-lg-4.paragraph-wrapper.col-md-5
           p.paragraph.paragraph-up I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age—he was committed to collaborative scholarship and was a champion of open data.
           p.paragraph I was commissioned for some web design work on the Scaife Digital Library (SDL). It commemorates Ross Scaife who did pioneering work for the study of Greco-Roman culture in a digital age.
 
@@ -34,36 +34,108 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 575px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  .intro-wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .paragraph-wrapper {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  .intro-wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .paragraph-wrapper {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  .intro-wrapper {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+
+  .paragraph-wrapper {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 133px;
+  }
+
+  .intro-wrapper {
+    margin-top: 170px;
+    margin-bottom: 170px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+
+  .paragraph-wrapper {
+    margin-top: -130px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 176px;
+  }
+
+  .intro-wrapper {
+    margin-top: 170px;
+    margin-bottom: 170px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+}
+
 .full-width {
   width: 100vw;
 }
 
-.intro-wrapper {
-  margin-top: 170px;
-  margin-bottom: 170px;
-}
-
-h1 {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
 .paragraph {
-  font-size: 18px;
   font-weight: 200;
   line-height: 1.9;
 }
 
 h1 {
-  font-size: 176px;
   font-weight: 700;
-  line-height: 170px;
+  line-height: 1;
   word-wrap: break-word;
+
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-.paragraph-wrapper {
-  margin-top: -130px;
-}
 .paragraph-wrapper p:nth-child(2) {
   padding-top: 10px;
 }
