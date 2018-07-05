@@ -28,8 +28,8 @@
           h4 Process
 
         div.col-lg-4.col-md-4.col-sm-5
-          h3 Some sort of quote will go here etc etc etc I don't know.
-          p.paragraph I started by consulting the client: we built out user stories abd discussed the stakeholders (educators, students, researchers, etc). Researchers may be archivists working with MIT to document maritime advancement in Boston, and students could be MIT students (or otherwise), so there was much ground to cover.
+          h3 The challenge: capturing the immense amount of data [in the] archives...
+          p.paragraph I started by consulting the client: we built out user stories and discussed the stakeholders (educators, students, researchers, etc). Researchers may be archivists working with MIT to document maritime advancement in Boston, and students could be MIT students (or otherwise), so there was much ground to cover.
 
         p.paragraph.more-process.col-lg-4.col-md-4.col-sm-5 The trick to this would be capturing the immense amount of data that existed about these archives, and predicting how the search ought to function based on researcher needs. All the planning was done with Invision Freehand, sometimes live with the client. Every week, I set up sprint goals advancing the march of the visuals, functionality, and testing. It ended with a testing session (scripted, moderated) with about 15 students.
 
